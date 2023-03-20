@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruszyn Krajeński - wizytówka miejscowości</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .info{
+        text-align: right;
+        text-decoration:none;
+        padding: 0.4em;
+      }
+      .stopka{
+        text-align: left;
+      }
+      h1{
+        font-weight: 600;
+        font-family: montserrat, 'sans-serif';
+      }
+      .lead{
+        font-family: Roboto, 'sans-serif';
+        font-weight: 300;
+      }
+    .btn-main-1{
+      background-color: #00ac4e;
+      border: none;
+      font-family: Montserrat, 'sans-serif';
+      }
+    .btn-main-1:hover{
+      background-color: #03843a;
+      }
+    .btn-main-2{
+      background-color: #ffc800;
+      border: black;
+      font-family: Montserrat, 'sans-serif';
+      }
+    .btn-main-2:hover{
+      background-color: #e0ab03;
+      }
+  </style>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="logo.svg" alt="Logo"
+            height="45"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Włącz nawigację">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Strona
+                główna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#opis">Opis</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Klub seniora</a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div class="container col-xxl px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="POL_gmina_Białe_Błota_COA.svg" class="d-block mx-lg-auto
+            img-fluid" width="200" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 lh-1 mb-3">Witaj w Kruszynie Krajeńskim!</h1>
+          <p id="opis" class="lead">Kruszyn Krajeński to wieś położona w
+            województwie kujawsko-pomorskim, w powiecie bydgoskim, nad rzeką
+            Skrwą. Znajduje się tutaj wiele zabytkowych budynków oraz urokliwe
+            krajobrazy, które przyciągają turystów z całej Polski.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a class="btn btn-primary btn-lg px-5 me-md-3
+              btn-main-1" href="https://facebook.com/" target="_blank" title="Kliknij aby wejść na stronę na Facebooku">Aktualności</a>
+            <button type="button" class="btn btn-primary btn-lg px-4
+              btn-main-2">Kontakt</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container col-xxl-2">
+      <iframe id="mapa" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=17.808837890625004%2C53.048024346506224%2C17.937583923339847%2C53.11216288766498&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/>
+      
+    </div>
+    <footer class="container stopka border-top py-3 my-4 ">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <a>&copy; 2023 Michał Kwiatkowski</a>
+        </div>
+        <div class="nav col-md-4 offset-md-4">
+          <div class="nav-item">
+            <a class="nav-link px-2 text-muted" href="cookies.html">Polityka prywatności</a>
+          </div>
+          <div class="nav-item">
+            <a href="https://bip.bialeblota.pl" target="_blank"><img class="nav-link px-2" alt="Biuletyn Informacji Publicznej" src="https://upload.wikimedia.org/wikimedia/pl/3/3d/Logo_BIP_uproszczone.svg">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="info bg-dark-subtle align-items-right text-muted">
+      <a class="text-muted">
+        <!--<img style="height: 13px;" src="https://upload.wikimedia.org/wikipedia/commons/8/87/POL_gmina_Białe_Błota_flag.svg">--><a>&nbsp;Oficjalna strona</a>
+        <a class="text-muted" style="text-decoration:none;"target="_blank" href="https://bialeblota.pl">Gminy Białe Błota
+          <i style="font-size: 0.9rem;" class="bi bi-box-arrow-up-right"></i>
+        </a>
+    </div>
+    <!-- <footer class="container d-flex flex-wrap justify-content-between
+      align-items-center py-3 my-4 border-top">
+      <a></a><a>&copy; 2023 Michał Kwiatkowski<br>
+      </a>Oficjalna strona <a target="_blank" href="https://bialeblota.pl">Gminy Białe Błota <i style="font-size: 0.9rem;" class="bi bi-box-arrow-up-right"></i></a>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link px-2 text-muted" href="cookies.html">Polityka
+            prywatności</a>
+        </li>
+        <li class="nav-item">
+          <a href="https://bip.bialeblota.pl" target="_blank"><img class="nav-link px-2" alt="Biuletyn Informacji Publicznej" src="https://upload.wikimedia.org/wikimedia/pl/3/3d/Logo_BIP_uproszczone.svg">          </a>
+        </li>
+      </ul>
+    </footer> -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+  </html>
