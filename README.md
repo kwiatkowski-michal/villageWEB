@@ -6,4 +6,7 @@ The project involves creating simple, clear, and consistent websites for each vi
 Strony internetowe dla gminy Białe Błota z wykorzystaniem Bootstrapa.
 # O projekcie
 Projekt zakłada stworzenie prostych, przejrzystych i spójnych stron internetowych dla każdego sołectwa w Gminie Białe Błota.
-![logo kruszyn](/kruszyn-krajenski/logo.svg)
+<picture>
+<a href="https://kwiatkowski-michal.github.io/villageWEB/kruszyn-krajenski/index.html"><img src="./kruszyn-krajenski/logo.svg" height=100px></a>
+</picture>
+
