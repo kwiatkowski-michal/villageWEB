@@ -1,2 +1,122 @@
-<a href=./kruszyn-krajenski/index.html>Kruszyn Krajeński</a>
-<a href=./ciele/index.html>Ciele</a>
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kruszyn Krajeński - wizytówka miejscowości</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;800&family=Roboto:wght@100;300&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt="Logo" height="45"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Włącz nawigację">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Strona
+              główna</a>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="#opis">Opis</a>
+            </li> -->
+          <li class="nav-item">
+            <a style="margin-left: 1rem;" class="nav-link" href="./klub-seniora.html">Klub seniora</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container col-xxl px-4 py-4">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./img/herb.svg" class="d-block mx-lg-auto
+            img-fluid" width="200" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="lh-1 mb-3">Witaj w Kruszynie Krajeńskim!</h1>
+        <p id="opis" class="f-roboto">Kruszyn Krajeński to wieś położona w
+          województwie kujawsko-pomorskim, w powiecie bygdoskim, nad rzeką
+          Skrwą. Znajduje się tutaj wiele zabytkowych budynków oraz urokliwe
+          krajobrazy, które przyciągają turystów z całej Polski.</p>
+        <div class="d-grid f-white gap-2 d-md-flex justify-content-md-start">
+          <a class="btn f-white trans-yellow-btn btn-default btn-lg px-5 me-md-3 btn-main-1" href="https://facebook.com/"
+            target="_blank" title="Kliknij aby wejść na stronę na Facebooku">
+            <i class="bi bi-box-arrow-up-right"></i> Aktulaności</a>
+            <button type="button" class="btn btn-main-2 trans-green-btn btn-default f-white btn-lg px-4">Kontakt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container f-white f-montserrat">
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 c-yellow trans-green rounded-3">
+          <h2 class="f-600"><i class="bi bi-people"></i> Liczba ludności</h2>
+          <p class="f-white f-roboto">1598 osób</p><br>
+          <h2 class="f-600"><i class="bi bi-textarea"></i> Pole powierzchni</h2>
+          <p class="f-roboto">15,35 km<sup>2</sup></p>
+        </div>
+      </div>
+      <div class="cont-second col-md-6">
+        <div class="h-100 p-5 c-green trans-yellow rounded-3">
+          <h2 class="f-600">Add borders</h2>
+          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to
+            look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
+            content for equal-height.</p>
+          <button type="button" class="btn btn-main-2 btn-default f-white btn-lg px-4">Kontakt</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <iframe id="mapa" width="100%" height="300" frameborder="" scrolling="no" marginheight="0" marginwidth="0"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=17.808837890625004%2C53.048024346506224%2C17.937583923339847%2C53.11216288766498&amp;layer=mapnik"
+      style="border: 1px solid black"></iframe><br />
+  </div>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 col-sm- text-muted">&copy; 2023</p>
+      <a href="https://bip.bialeblota.pl"
+        class="nav col-md-4 d-flex align-items-center justify-content-center  link-dark text-decoration-none">
+        <img class="bi me-2" src="./img/bip.svg"><i style="font-size: 0.9rem;"
+          class="bi bi-box-arrow-up-right"></i></img>
+
+      </a>
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="./cookies.html" class="nav-link px-2 text-muted">Polityka prywatności</a></li>
+      </ul>
+    </footer>
+  </div>
+  <div class="bg-dark-subtle">
+    <div class="container">
+      <div class="info bg-dark-subtle align-items-right text-muted">
+        <a class="text-muted">
+          <!--<img style="height: 13px;" src="https://upload.wikimedia.org/wikipedia/commons/8/87/POL_gmina_Białe_Błota_flag.svg">--><a>&nbsp;Oficjalna
+            strona</a>
+          <a class="text-muted" style="text-decoration:none;" target="_blank" href="https://bialeblota.pl">Gminy Białe
+            Błota
+            <i aria-hidden="true" class="bi bi-box-arrow-up-right"></i>
+          </a>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
