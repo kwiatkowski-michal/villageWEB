@@ -1,0 +1,68 @@
+.cont-mid {
+    background-color: #ffc800;
+    border-radius: 12px;
+}
+
+.cont-mid:hover {
+    box-shadow: 12px 12px 0px 1px #00ac4e;
+}
+
+iframe {
+    margin-top: 5rem;
+}
+
+#dane {
+    font-weight: 100;
+}
+
+.facts {
+    font-family: Montserrat, 'sans-serif';
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 4rem;
+    padding: 1.5rem;
+    color: white;
+    text-shadow: 0.5px 0.5px 0.px  black;
+}
+
+.foobar {
+    text-align: right;
+}
+
+.info {
+    text-align: right;
+    text-decoration: none;
+    padding: 0.4em;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: Montserrat, 'sans-serif';
+}
+
+.lead {
+    font-family: Roboto, 'sans-serif';
+    font-weight: 300;
+}
+
+.btn-main-1 {
+    background-color: #00ac4e;
+    border: none;
+    font-family: Montserrat, 'sans-serif';
+    font-weight: 600;
+}
+
+.btn-main-1:hover {
+    background-color: #03843a;
+}
+
+.btn-main-2 {
+    background-color: #ffc800;
+    border: black;
+    font-family: Montserrat, 'sans-serif';
+    font-weight: 600;
+}
+
+.btn-main-2:hover {
+    background-color: #e0ab03;
+}
