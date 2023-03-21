@@ -1,28 +1,24 @@
-.cont-mid {
+.c-yellow {
     background-color: #ffc800;
-    border-radius: 12px;
 }
-
-.cont-mid:hover {
-    box-shadow: 12px 12px 0px 1px #00ac4e;
+.c-green{
+    background-color: #00ac4e;
 }
-
 iframe {
     margin-top: 5rem;
 }
 
-#dane {
+.f-100 {
     font-weight: 100;
 }
-
-.facts {
-    font-family: Montserrat, 'sans-serif';
+.f-600{
     font-weight: 600;
-    font-size: 1.5em;
-    line-height: 4rem;
-    padding: 1.5rem;
+}
+.f-montserrat {
+    font-family: Montserrat, 'sans-serif';
+}
+.f-white{
     color: white;
-    text-shadow: 0.5px 0.5px 0.px  black;
 }
 
 .foobar {
@@ -51,9 +47,9 @@ h1 {
     font-family: Montserrat, 'sans-serif';
     font-weight: 600;
 }
-
 .btn-main-1:hover {
     background-color: #03843a;
+    color: white;
 }
 
 .btn-main-2 {
