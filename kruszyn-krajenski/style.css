@@ -1,12 +1,43 @@
+
+@media (min-width: 768px) {
+    .trans-yellow{
+        transition: box-shadow 0.15s ease-in-out;
+    }
+    .trans-yellow:hover{
+        box-shadow: 7px 7px #ffc800;
+        transition: box-shadow 0.15s ease-in-out;
+    }
+    
+    .trans-green{
+        transition: box-shadow 0.15s ease-in-out;
+    }
+    .trans-green:hover{
+        box-shadow: 7px 7px #00ac4e;
+        transition: box-shadow 0.15s ease-in-out;
+    }
+    .trans-yellow-btn{
+        transition: box-shadow 0.15s ease-in-out;
+    }
+    .trans-yellow-btn:hover{
+        box-shadow: 7px 7px #ffc800;
+        transition: box-shadow 0.15s ease-in-out;
+    }
+    
+    .trans-green-btn{
+        transition: box-shadow 0.15s ease-in-out;
+    }
+    .trans-green-btn:hover{
+        box-shadow: 7px 7px #00ac4e;
+        transition: box-shadow 0.15s ease-in-out;
+    }
+    
+}
 @media (max-width: 768px) {
     .cont-second{
         padding-top: 4em;
     }
-
 }
-.f-400{
 
-}
 .c-yellow {
     background-color: #ffc800;
 }
@@ -14,7 +45,7 @@
     background-color: #00ac4e;
 }
 iframe {
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .f-100 {
@@ -32,37 +63,8 @@ iframe {
 }
 
 
-.trans-yellow-btn{
-    transition: box-shadow 0.15s ease-in-out;
-}
-.trans-yellow-btn:hover{
-    box-shadow: 7px 7px #ffc800;
-    transition: box-shadow 0.15s ease-in-out;
-}
 
-.trans-green-btn{
-    transition: box-shadow 0.15s ease-in-out;
-}
-.trans-green-btn:hover{
-    box-shadow: 7px 7px #00ac4e;
-    transition: box-shadow 0.15s ease-in-out;
-}
 
-.trans-yellow{
-    transition: box-shadow 0.15s ease-in-out;
-}
-.trans-yellow:hover{
-    box-shadow: 7px 7px #ffc800;
-    transition: box-shadow 0.15s ease-in-out;
-}
-
-.trans-green{
-    transition: box-shadow 0.15s ease-in-out;
-}
-.trans-green:hover{
-    box-shadow: 7px 7px #00ac4e;
-    transition: box-shadow 0.15s ease-in-out;
-}
 
 .info {
     text-align: right;
