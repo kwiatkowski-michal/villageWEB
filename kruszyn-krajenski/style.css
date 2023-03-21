@@ -30,7 +30,12 @@
         box-shadow: 7px 7px #00ac4e;
         transition: box-shadow 0.15s ease-in-out;
     }
-    
+
+}
+@media (min-width: 576px){
+    .footer-class{
+        text-align: right;
+    }
 }
 @media (max-width: 768px) {
     .cont-second{
