@@ -4,6 +4,9 @@
     }
 
 }
+.f-400{
+
+}
 .c-yellow {
     background-color: #ffc800;
 }
@@ -46,20 +49,18 @@ iframe {
 }
 
 .trans-yellow{
-    box-shadow: 7px 7px #ffc800;
     transition: box-shadow 0.15s ease-in-out;
 }
 .trans-yellow:hover{
-    box-shadow: 15px 15px #ffc800;
+    box-shadow: 7px 7px #ffc800;
     transition: box-shadow 0.15s ease-in-out;
 }
 
 .trans-green{
-    box-shadow: 7px 7px #00ac4e;
     transition: box-shadow 0.15s ease-in-out;
 }
 .trans-green:hover{
-    box-shadow: 15px 15px #00ac4e;
+    box-shadow: 7px 7px #00ac4e;
     transition: box-shadow 0.15s ease-in-out;
 }
 
