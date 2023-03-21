@@ -19,7 +19,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html"><img src="./logo.svg" alt="Logo" height="45"></a>
+      <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt="Logo" height="45"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Włącz nawigację">
         <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
               <a class="nav-link" href="#opis">Opis</a>
             </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="./klub-seniora.html">Klub seniora</a>
+            <a style="margin-left: 1rem;" class="nav-link" href="./klub-seniora.html">Klub seniora</a>
           </li>
         </ul>
       </div>
@@ -43,20 +43,20 @@
   <div class="container col-xxl px-4 py-4">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="./herb.svg" class="d-block mx-lg-auto
+        <img src="./img/herb.svg" class="d-block mx-lg-auto
             img-fluid" width="200" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="lh-1 mb-3">Witaj w Kruszynie Krajeńskim!</h1>
-        <p id="opis" class="lead">Kruszyn Krajeński to wieś położona w
+        <p id="opis" class="f-roboto">Kruszyn Krajeński to wieś położona w
           województwie kujawsko-pomorskim, w powiecie bygdoskim, nad rzeką
           Skrwą. Znajduje się tutaj wiele zabytkowych budynków oraz urokliwe
           krajobrazy, które przyciągają turystów z całej Polski.</p>
         <div class="d-grid f-white gap-2 d-md-flex justify-content-md-start">
-          <button class="btn f-white btn-default btn-lg px-5 me-md-3
-              btn-main-1" href="https://facebook.com/" target="_blank"
-            title="Kliknij aby wejść na stronę na Facebooku">Aktulaności&nbsp;<i style="font-size: 0.9rem;" class="bi bi-box-arrow-up-right"></i></button>
-          <button type="button" class="btn btn-main-2 btn-default f-white btn-lg px-4">Kontakt</button>
+          <button class="btn f-white trans-yellow-btn btn-default btn-lg px-5 me-md-3 btn-main-1" href="https://facebook.com/"
+            target="_blank" title="Kliknij aby wejść na stronę na Facebooku">
+            <i class="bi bi-box-arrow-up-right"></i> Aktulaności
+            <button type="button" class="btn btn-main-2 trans-green-btn btn-default f-white btn-lg px-4">Kontakt</button>
         </div>
       </div>
     </div>
@@ -64,15 +64,19 @@
   <div class="container f-white f-montserrat">
     <div class="row align-items-md-stretch">
       <div class="col-md-6">
-        <div class="h-100 p-5 c-yellow shadow rounded-3">
-          <h2 class="f-600">Liczba ludności</h2><h5>1598 osób</h5><br>
-          <h2 class="f-600">Powierzchnia</h2><h5>15,35 km<sup>2</sup></h5>
+        <div class="h-100 p-5 c-yellow trans-green rounded-3">
+          <h2 class="f-600"><i class="bi bi-people"></i> Liczba ludności</h2>
+          <p class="f-white f-roboto">1598 osób</p><br>
+          <h2 class="f-600"><i class="bi bi-textarea"></i> Pole powierzchni</h2>
+          <p class="f-roboto">15,35 km<sup>2</sup></p>
         </div>
       </div>
-      <div class="border-top col-md-6">
-        <div class="h-100 p-5 c-green shadow rounded-3">
+      <div class="cont-second col-md-6">
+        <div class="h-100 p-5 c-green trans-yellow rounded-3">
           <h2 class="f-600">Add borders</h2>
-          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+          <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to
+            look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
+            content for equal-height.</p>
           <button type="button" class="btn btn-main-2 btn-default f-white btn-lg px-4">Kontakt</button>
         </div>
       </div>
@@ -85,14 +89,13 @@
   </div>
   <div class="container">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-muted">&copy; 2023</p>
+      <p class="col-md-4 mb-0 col-sm- text-muted">&copy; 2023</p>
       <a href="https://bip.bialeblota.pl"
-        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-        <svg class="bi me-2" width="0" height="0"><img
-            src="https://upload.wikimedia.org/wikimedia/pl/3/3d/Logo_BIP_uproszczone.svg"></svg>&nbsp;
-            <i style="font-size: 0.9rem;" class="bi bi-box-arrow-up-right"></i>
-          </a>
-      
+        class="nav col-md-4 d-flex align-items-center justify-content-center  link-dark text-decoration-none">
+        <img class="bi me-2" src="./img/bip.svg"><i style="font-size: 0.9rem;"
+          class="bi bi-box-arrow-up-right"></i></img>
+
+      </a>
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a href="./cookies.html" class="nav-link px-2 text-muted">Polityka prywatności</a></li>
       </ul>
@@ -106,12 +109,14 @@
             strona</a>
           <a class="text-muted" style="text-decoration:none;" target="_blank" href="https://bialeblota.pl">Gminy Białe
             Błota
-            <i style="font-size: 0.9rem;" class="bi bi-box-arrow-up-right"></i>
+            <i aria-hidden="true" class="bi bi-box-arrow-up-right"></i>
           </a>
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+    .cont-second{
+        padding-top: 4em;
+    }
+
+}
 .c-yellow {
     background-color: #ffc800;
 }
@@ -19,10 +25,42 @@ iframe {
 }
 .f-white{
     color: white;
+    transition: text-decoration 1s ease-in-out;
 }
 
-.foobar {
-    text-align: right;
+
+.trans-yellow-btn{
+    transition: box-shadow 0.15s ease-in-out;
+}
+.trans-yellow-btn:hover{
+    box-shadow: 7px 7px #ffc800;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.trans-green-btn{
+    transition: box-shadow 0.15s ease-in-out;
+}
+.trans-green-btn:hover{
+    box-shadow: 7px 7px #00ac4e;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.trans-yellow{
+    box-shadow: 7px 7px #ffc800;
+    transition: box-shadow 0.15s ease-in-out;
+}
+.trans-yellow:hover{
+    box-shadow: 15px 15px #ffc800;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+.trans-green{
+    box-shadow: 7px 7px #00ac4e;
+    transition: box-shadow 0.15s ease-in-out;
+}
+.trans-green:hover{
+    box-shadow: 15px 15px #00ac4e;
+    transition: box-shadow 0.15s ease-in-out;
 }
 
 .info {
@@ -36,9 +74,10 @@ h1 {
     font-family: Montserrat, 'sans-serif';
 }
 
-.lead {
+.f-roboto {
     font-family: Roboto, 'sans-serif';
     font-weight: 300;
+    font-size: 1.2em;
 }
 
 .btn-main-1 {
@@ -48,8 +87,7 @@ h1 {
     font-weight: 600;
 }
 .btn-main-1:hover {
-    background-color: #03843a;
-    color: white;
+    background-color: #00ac4e;
 }
 
 .btn-main-2 {
@@ -60,5 +98,5 @@ h1 {
 }
 
 .btn-main-2:hover {
-    background-color: #e0ab03;
+    background-color: #ffc800;
 }
