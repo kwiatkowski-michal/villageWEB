@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pl">
 
 <head>
@@ -17,14 +17,13 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt="Logo" height="45"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Włącz nawigację">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-main">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="nav-main">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./index.html">Strona główna</a>
@@ -39,7 +38,7 @@
       </div>
     </div>
   </nav>
-  <div class="container col-xxl">
+  <div class="container mt-5 col-xxl">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="./img/herb.svg" class="d-block mx-lg-auto img-fluid" width="200" height="500" loading="lazy">
@@ -49,11 +48,11 @@
         <p id="opis" class="f-roboto">Kruszyn Krajeński to wieś położona w województwie kujawsko-pomorskim, w powiecie
           bygdoskim, nad rzeką Skrwą. Znajduje się tutaj wiele zabytkowych budynków oraz urokliwe krajobrazy, które
           przyciągają turystów z całej Polski.</p>
-        <div class="d-grid f-white gap-2 d-md-flex justify-content-md-start">
-          <a class="btn f-white trans-yellow-btn btn-default btn-lg px-5 me-md-3 btn-main-1"
+        <div class="d-grid gap-3 d-md-flex">
+          <a class="btn f-600 btn-dark btn-main-1 trans-yellow-btn f-montserrat btn-lg px-5"
             href="https://facebook.com/" target="_blank" title="Kliknij aby wejść na stronę na Facebooku">
             <i class="bi bi-box-arrow-up-right"></i> Aktulaności</a>
-          <button type="button" class="btn btn-main-2 trans-green-btn btn-default f-white btn-lg px-4">Kontakt</button>
+          <button type="button" class="btn btn-dark btn-main-2 trans-green-btn btn-lg px-4">Kontakt</button>
         </div>
       </div>
     </div>
@@ -89,35 +88,29 @@
           </div>
           <div>
             <h2 class="f-600"><i class="bi bi-calendar"></i> Najbliższe zebranie</h2>
-            <div id="wynik" class="f-white f-roboto">1 stycznia 2023 r.</div>
+            <div id="wynik" class="f-white f-roboto">Wczytywanie...</div>
           </div>
         </div>
       </div>
       <div class="cont-second col-lg-6 col-md-12">
         <div class="h-100 p-5 c-green trans-yellow rounded-3">
-          <h2 class="f-600">Lorem ipsum</h2>
-          <p style="font-size: 1.1rem;" class="f-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-            tempor scelerisque sem a pellentesque. Ut euismod leo nec odio condimentum auctor. Nulla facilisi. Nam
-            gravida turpis eget dignissim tincidunt. Morbi posuere sagittis ornare. Nulla vitae ligula vel neque dictum
-            efficitur ut volutpat metus. Fusce ornare leo id leo dignissim laoreet. Vestibulum dapibus dui in nunc
-            venenatis, vel lacinia arcu dapibus. Nam consectetur rhoncus augue. Curabitur vel posuere turpis, eget
-            pulvinar purus. Donec at luctus ligula. Ut sagittis blandit quam, at mattis turpis. Quisque vitae feugiat
-            neque, nec egestas lectus. Vivamus sed velit ac est fringilla interdum. Integer facilisis risus at mi auctor
-            vestibulum. Vestibulum non mi vehicula nunc porttitor aliquet.</p>
+          <h2 class="f-600">Wywóz śmieci</h2>
+          <iframe  width="100%" height="400" src="https://cloud.fxsystems.com.pl/OdbiorySmieci/HarmonogramOnline.dll?gmina_id=309632"></iframe> </p>
           <button type="button" class="btn btn-main-2 btn-default f-white btn-lg px-4">Kontakt</button>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container mt-5">
     <iframe id="mapa" width="100%" height="300" frameborder="" scrolling="no" marginheight="0" marginwidth="0"
       src="https://www.openstreetmap.org/export/embed.html?bbox=17.808837890625004%2C53.048024346506224%2C17.937583923339847%2C53.11216288766498&amp;layer=mapnik"
-      style="border: 1px solid black"></iframe><br />
+      ></iframe><br />
   </div>
   <div class="container">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-2 py-5 pb-0 my-5 border-top">
       <div class="col mb-3">
-        <a href="https://bip.bialeblota.pl" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <a href="https://bip.bialeblota.pl" target="_blank"
+          class="d-flex align-items-center mb-3 link-dark text-decoration-none">
           <img class="bi me-2" src="./img/bip.svg"><i class="bi bi-box-arrow-up-right"></i></img>
         </a>
         <p>&copy; Data aktualizacji: 21 marca 2023</p>
@@ -131,21 +124,20 @@
       </div>
     </footer>
   </div>
-  <div class="bg-dark-subtle">
-    <div class="container">
-      <div class="info bg-dark-subtle align-items-right text-muted">
-        <a class="text-muted">
-          <a>&nbsp;Oficjalna strona</a>
-          <a class="text-muted text-decoration-none" target="_blank" href="https://bialeblota.pl">Gminy Białe Błota
-            <i aria-hidden="true" class="bi bi-box-arrow-up-right"></i>
-          </a>
-      </div>
+  <div class="bg-dark-subtle ">
+    <div class="container info bg-dark-subtle align-items-right text-muted">
+      <a class="text-muted">
+        <a>&nbsp;Oficjalna strona</a>
+        <a class="text-muted text-decoration-none" target="_blank" href="https://bialeblota.pl">Gminy Białe Błota
+          <i aria-hidden="true" class="bi bi-box-arrow-up-right"></i>
+        </a>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
   <script src="./zebranie.js"></script>
+  <script src="./smieci.js"></script>
 </body>
 
 </html>

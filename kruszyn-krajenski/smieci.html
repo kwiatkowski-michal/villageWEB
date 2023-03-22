@@ -1,0 +1,992 @@
+<!doctype html>
+<html>
+<head>
+ <title>Harmonogram online</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+ <script src='https://cloud.fxsystems.com.pl/OdbiorySmieci/HarmonogramOnlineTemplates/jquery-3.2.1.min.js' type='text/javascript'></script>
+ <script src='https://cloud.fxsystems.com.pl/OdbiorySmieci/HarmonogramOnlineTemplates/select2/dist/js/select2.min.js' type='text/javascript'></script>
+ 
+ <link href='https://cloud.fxsystems.com.pl/OdbiorySmieci/HarmonogramOnlineTemplates/select2/dist/css/select2.min.css' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px 10px;
+}
+
+/* Float four columns side by side */
+.columnnajblizszy {
+  float: left;
+  width: 100%;
+  padding: 0 10px 10px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Responsive columns */
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 0px;
+  text-align: center;
+  background-color: #ffffff;
+  height: 150px;
+  border-radius: 10px;
+  transition: transform 250ms;
+}
+
+/* css z kolumną dla listy wyboru */
+.columnfull {
+  float: left;
+  width: 100%;
+  padding: 0 10px 10px;
+}
+
+/* styl css dla katy listy wyboru */
+
+/* do przycisku */
+.btnSearchfull {
+  margin: 5px 0px 90px 0px; 
+}
+
+.termin {
+  display: grid;
+  grid-template-columns: 5% 70% 25%;
+  grid-template-rows: 20% 60% 20%;
+  gap: 0% 0px;
+  grid-template-areas:
+    "bok naglowek naglowek"
+    "bok srodek kosz"
+    "bok stopka stopka";
+}
+
+.termin_najblizszy {
+  display: grid;
+  grid-template-columns: 0% 100% 0%;
+  grid-template-rows: 20% 70% 10%;
+  gap: 0% 0px;
+  grid-template-areas:
+    "bok naglowek naglowek"
+    "bok srodek kosz"
+    "bok stopka stopka";
+}
+
+.bok { 
+  grid-area: bok; 
+  border-radius: 10px 0px 0px 10px;
+}
+
+.naglowek { 
+  grid-area: naglowek; 
+  margin-top: 3px;
+  text-align: center;
+}
+
+.naglowek_brak { 
+  grid-area: naglowek; 
+  margin-top: 3px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.kosz { grid-area: kosz; }
+
+.srodek { 
+  grid-area: srodek;  
+  text-align: center;
+}
+
+.stopka { 
+  grid-area: stopka; 
+  border-radius: 0px 0px 10px 10px;
+}
+
+.stopka_brak { 
+  grid-area: stopka; 
+  border-radius: 0px 0px 10px 10px;
+}
+
+.wysrodkowanie{
+    margin: auto;
+    display: block;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  border-radius: 4px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="row">
+  <div class="columnfull">
+    <div class="cardfull">
+      <h4>Harmonogram Kiedy śmieci dla gminy: Białe Błota</h4>
+      <p>Wybierz ulicę lub miejsce odbioru odpadów:</p>
+      <!-- Dropdown -->       
+        <select id='selUlica' style='width: 100%;'>
+	<option>Białe Błota, Alibaby</option>
+<option>Białe Błota, Alpejska</option>
+<option>Białe Błota, Altanowa</option>
+<option selected>Białe Błota, Ametystowa</option>
+<option>Białe Błota, Arlekina</option>
+<option>Białe Błota, Asfaltowa</option>
+<option>Białe Błota, Azalowa</option>
+<option>Białe Błota, Bagatela</option>
+<option>Białe Błota, Bajeczna</option>
+<option>Białe Błota, Bałkańska</option>
+<option>Białe Błota, Bartnicza</option>
+<option>Białe Błota, Barwinkowa</option>
+<option>Białe Błota, Barycka (do nr 35 i 36)</option>
+<option>Białe Błota, Barycka (od nr 37a)</option>
+<option>Białe Błota, Bazaltowa</option>
+<option>Białe Błota, Berberysowa</option>
+<option>Białe Błota, Betonowa</option>
+<option>Białe Błota, Biała</option>
+<option>Białe Błota, Boruty</option>
+<option>Białe Błota, Bracka</option>
+<option>Białe Błota, Cała</option>
+<option>Białe Błota, Cedrowa</option>
+<option>Białe Błota, Centralna (do nr 41 i do nr 66)</option>
+<option>Białe Błota, Centralna (od nr 43 i od nr 68)</option>
+<option>Białe Błota, Chełmska</option>
+<option>Białe Błota, Chlebowa</option>
+<option>Białe Błota, Chmielarska</option>
+<option>Białe Błota, Chmielna</option>
+<option>Białe Błota, Chopina</option>
+<option>Białe Błota, Chudoby</option>
+<option>Białe Błota, Cisowa</option>
+<option>Białe Błota, Cukiernicza</option>
+<option>Białe Błota, Cukrowa</option>
+<option>Białe Błota, Cynowa</option>
+<option>Białe Błota, Cyprysowa</option>
+<option>Białe Błota, Czahary</option>
+<option>Białe Błota, Czajcza</option>
+<option>Białe Błota, Czarnoleska</option>
+<option>Białe Błota, Czekoladowa</option>
+<option>Białe Błota, Czeremchy</option>
+<option>Białe Błota, Czerska</option>
+<option>Białe Błota, Czwartaków</option>
+<option>Białe Błota, Czysta</option>
+<option>Białe Błota, Daleka</option>
+<option>Białe Błota, Daliowa</option>
+<option>Białe Błota, Drzewna</option>
+<option>Białe Błota, Duńska</option>
+<option>Białe Błota, Dworska</option>
+<option>Białe Błota, Epokowa</option>
+<option>Białe Błota, Ezopa</option>
+<option>Białe Błota, Feniksa</option>
+<option>Białe Błota, Forteczna</option>
+<option>Białe Błota, Gontowa</option>
+<option>Białe Błota, Goplany</option>
+<option>Białe Błota, Gronowa</option>
+<option>Białe Błota, Guliwera</option>
+<option>Białe Błota, Gwarna</option>
+<option>Białe Błota, Hebanowa</option>
+<option>Białe Błota, Herbowa</option>
+<option>Białe Błota, Hippiczna</option>
+<option>Białe Błota, Hodowlana</option>
+<option>Białe Błota, Iglasta</option>
+<option>Białe Błota, Izoldy</option>
+<option>Białe Błota, Jantarowa</option>
+<option>Białe Błota, Jaracza</option>
+<option>Białe Błota, Jaśminowa</option>
+<option>Białe Błota, Judyma</option>
+<option>Białe Błota, Jutrzenki (bez nr 1,2,4),</option>
+<option>Białe Błota, Kadetów</option>
+<option>Białe Błota, Kapliczna</option>
+<option>Białe Błota, Kocia</option>
+<option>Białe Błota, Kolejowa</option>
+<option>Białe Błota, Konarowa</option>
+<option>Białe Błota, Konwaliowa</option>
+<option>Białe Błota, Kruszyńska</option>
+<option>Białe Błota, Ku Belbie</option>
+<option>Białe Błota, Lagunowa</option>
+<option>Białe Błota, Lawendowa</option>
+<option>Białe Błota, Lechnicka</option>
+<option>Białe Błota, Leśna</option>
+<option>Białe Błota, Letnia</option>
+<option>Białe Błota, Literacka</option>
+<option>Białe Błota, Ludowa</option>
+<option>Białe Błota, Lutników</option>
+<option>Białe Błota, Łochowska</option>
+<option>Białe Błota, Mała</option>
+<option>Białe Błota, Miła</option>
+<option>Białe Błota, Mimozy</option>
+<option>Białe Błota, Młoda</option>
+<option>Białe Błota, Moczary</option>
+<option>Białe Błota, Modra</option>
+<option>Białe Błota, Mokra</option>
+<option>Białe Błota, Nad Stawami</option>
+<option>Białe Błota, Niedzielna</option>
+<option>Białe Błota, Nizinna</option>
+<option>Białe Błota, Obwodowa</option>
+<option>Białe Błota, Ogniskowa</option>
+<option>Białe Błota, Olchowa</option>
+<option>Białe Błota, Orlika</option>
+<option>Białe Błota, Ostróżki</option>
+<option>Białe Błota, Owcza</option>
+<option>Białe Błota, Parkowa</option>
+<option>Białe Błota, Piesza</option>
+<option>Białe Błota, Popiela</option>
+<option>Białe Błota, Poziomkowa</option>
+<option>Białe Błota, Przemysłowa</option>
+<option>Białe Błota, Reduty</option>
+<option>Białe Błota, Różana</option>
+<option>Białe Błota, Rusłana</option>
+<option>Białe Błota, Rzepichy</option>
+<option>Białe Błota, Sielska</option>
+<option>Białe Błota, Słoneczna</option>
+<option>Białe Błota, Sobótki</option>
+<option>Białe Błota, Sosnowa</option>
+<option>Białe Błota, Szafirowa</option>
+<option>Białe Błota, Szubińska</option>
+<option>Białe Błota, Temidy</option>
+<option>Białe Błota, Trawiasta</option>
+<option>Białe Błota, Tulipanowa</option>
+<option>Białe Błota, Turkusowa</option>
+<option>Białe Błota, Ulana</option>
+<option>Białe Błota, Uroczysko</option>
+<option>Białe Błota, Wierzbowa</option>
+<option>Białe Błota, Zacisze</option>
+<option>Białe Błota, Zawiła</option>
+<option>Białe Błota, Zeusa</option>
+<option>Białe Błota, Żaków</option>
+<option>Białe Błota, Żeńców</option>
+<option>Białe Błota, Żonkilowa</option>
+<option>Ciele</option>
+<option>Drzewce</option>
+<option>Kruszyn Krajeński, Akacjowa</option>
+<option>Kruszyn Krajeński, Białobłocka</option>
+<option>Kruszyn Krajeński, Brzozowa</option>
+<option>Kruszyn Krajeński, Bukowa</option>
+<option>Kruszyn Krajeński, Bukszpanowa</option>
+<option>Kruszyn Krajeński, Ceramiczna</option>
+<option>Kruszyn Krajeński, Chlebowa</option>
+<option>Kruszyn Krajeński, Cisowa</option>
+<option>Kruszyn Krajeński, Dębowa</option>
+<option>Kruszyn Krajeński, dz.nr 182/7</option>
+<option>Kruszyn Krajeński, Fiołkowa</option>
+<option>Kruszyn Krajeński, Gerberowa</option>
+<option>Kruszyn Krajeński, Grabowa</option>
+<option>Kruszyn Krajeński, Hortensji</option>
+<option>Kruszyn Krajeński, Irgowa</option>
+<option>Kruszyn Krajeński, Jałowcowa</option>
+<option>Kruszyn Krajeński, Jarzębinowa</option>
+<option>Kruszyn Krajeński, Jasiniecka</option>
+<option>Kruszyn Krajeński, Jasna</option>
+<option>Kruszyn Krajeński, Jesionowa</option>
+<option>Kruszyn Krajeński, Kasztanowa</option>
+<option>Kruszyn Krajeński, Klonowa</option>
+<option>Kruszyn Krajeński, Kolejowa</option>
+<option>Kruszyn Krajeński, Kwiatowa</option>
+<option>Kruszyn Krajeński, Leszczynowa</option>
+<option>Kruszyn Krajeński, Leśna</option>
+<option>Kruszyn Krajeński, Leśna dz. 162/18</option>
+<option>Kruszyn Krajeński, Leśna Przystań</option>
+<option>Kruszyn Krajeński, Liliowa</option>
+<option>Kruszyn Krajeński, Lipowa</option>
+<option>Kruszyn Krajeński, Łąkowa</option>
+<option>Kruszyn Krajeński, Łochowska</option>
+<option>Kruszyn Krajeński, Magnoliowa</option>
+<option>Kruszyn Krajeński, Mokra</option>
+<option>Kruszyn Krajeński, Morwowa</option>
+<option>Kruszyn Krajeński, Mroźna</option>
+<option>Kruszyn Krajeński, Ogrodowa</option>
+<option>Kruszyn Krajeński, Ogrodowa - teren "ROD Kruszynka "</option>
+<option>Kruszyn Krajeński, Olszynopwa</option>
+<option>Kruszyn Krajeński, Olszynowa</option>
+<option>Kruszyn Krajeński, Osiedlowa</option>
+<option>Kruszyn Krajeński, Osikowa</option>
+<option>Kruszyn Krajeński, Patrolowa</option>
+<option>Kruszyn Krajeński, Polna</option>
+<option>Kruszyn Krajeński, Porzeczkowa</option>
+<option>Kruszyn Krajeński, Promykowa</option>
+<option>Kruszyn Krajeński, Przemysłowa</option>
+<option>Kruszyn Krajeński, Przyjazna</option>
+<option>Kruszyn Krajeński, Siewna</option>
+<option>Kruszyn Krajeński, Siewna dz.216/9</option>
+<option>Kruszyn Krajeński, Słomkowa</option>
+<option>Kruszyn Krajeński, Słoneczna</option>
+<option>Kruszyn Krajeński, Sosnowa</option>
+<option>Kruszyn Krajeński, Stepowa</option>
+<option>Kruszyn Krajeński, Storczykowa</option>
+<option>Kruszyn Krajeński, Storczykowa dz. nr 139/38</option>
+<option>Kruszyn Krajeński, Stroczykowa</option>
+<option>Kruszyn Krajeński, Szosa Szubińska</option>
+<option>Kruszyn Krajeński, Szosa Szubińska (lewa strona numery parzyste)</option>
+<option>Kruszyn Krajeński, Szumiąca</option>
+<option>Kruszyn Krajeński, Świerkowa</option>
+<option>Kruszyn Krajeński, Topolowa</option>
+<option>Kruszyn Krajeński, Usługowa</option>
+<option>Kruszyn Krajeński, Wiązowa</option>
+<option>Kruszyn Krajeński, Wierzbowa</option>
+<option>Kruszyn Krajeński, Wiśniowa</option>
+<option>Kruszyn Krajeński, Wjazdowa</option>
+<option>Kruszyn Krajeński, Wyjazdowa</option>
+<option>Kruszyn Krajeński, Zaciszna</option>
+<option>Kruszyn Krajeński, Zaciszna dz. nr 154/134</option>
+<option>Kruszyn Krajeński, Zbożowa</option>
+<option>Kruszyn Krajeński, Żytnia</option>
+<option>Lipniki</option>
+<option>Lisi Ogon</option>
+<option>Łochowice</option>
+<option>Łochowo, Adama Mickiewicza</option>
+<option>Łochowo, Agrestowa</option>
+<option>Łochowo, Akacjowa</option>
+<option>Łochowo, Armii Krajowej</option>
+<option>Łochowo, Aroniowa</option>
+<option>Łochowo, Asnyka</option>
+<option>Łochowo, Bartnicza</option>
+<option>Łochowo, Biwakowa</option>
+<option>Łochowo, Bluszczowa</option>
+<option>Łochowo, Borówkowa</option>
+<option>Łochowo, Bratkowa</option>
+<option>Łochowo, Brzoskwiniowa</option>
+<option>Łochowo, Brzozowa</option>
+<option>Łochowo, Bukowa</option>
+<option>Łochowo, Bursztynowa</option>
+<option>Łochowo, Burzowa</option>
+<option>Łochowo, Cedrowa</option>
+<option>Łochowo, Chmurna</option>
+<option>Łochowo, Cicha</option>
+<option>Łochowo, Ciemna</option>
+<option>Łochowo, Ciepła</option>
+<option>Łochowo, Cisowa</option>
+<option>Łochowo, Cyprysowa</option>
+<option>Łochowo, Cz.Miłosza</option>
+<option>Łochowo, Czackiego</option>
+<option>Łochowo, Czereśniowa</option>
+<option>Łochowo, Dereniowa</option>
+<option>Łochowo, Deszczowa</option>
+<option>Łochowo, Dębowa</option>
+<option>Łochowo, Dorodna</option>
+<option>Łochowo, Dzika</option>
+<option>Łochowo, F. Woźniaka</option>
+<option>Łochowo, F.Kryspina</option>
+<option>Łochowo, Geparda</option>
+<option>Łochowo, Gościnna</option>
+<option>Łochowo, Grabowa</option>
+<option>Łochowo, Gradowa</option>
+<option>Łochowo, H. Sienkiewicza</option>
+<option>Łochowo, Iglasta</option>
+<option>Łochowo, Ignacego Kaczmarka</option>
+<option>Łochowo, Irysowa</option>
+<option>Łochowo, J. Bartkowiaka</option>
+<option>Łochowo, J. Brzechwy</option>
+<option>Łochowo, J. Frelichowskiego</option>
+<option>Łochowo, J. Matejki</option>
+<option>Łochowo, J. Słowackiego</option>
+<option>Łochowo, J. Tuwima</option>
+<option>Łochowo, J.Kochanowskiego</option>
+<option>Łochowo, Jabłoniowa</option>
+<option>Łochowo, Jachtowa</option>
+<option>Łochowo, Jaguara</option>
+<option>Łochowo, Jałowcowa</option>
+<option>Łochowo, Jarzębinowa</option>
+<option>Łochowo, Jasna</option>
+<option>Łochowo, Jaśminowa</option>
+<option>Łochowo, Jaworowa</option>
+<option>Łochowo, Jedlinowa</option>
+<option>Łochowo, Jesienna</option>
+<option>Łochowo, Jesionowa</option>
+<option>Łochowo, Jeżynowa</option>
+<option>Łochowo, Jodłowa</option>
+<option>Łochowo, Kalinowa</option>
+<option>Łochowo, Kasztanowa</option>
+<option>Łochowo, Klonowa</option>
+<option>Łochowo, Konopnickiej</option>
+<option>Łochowo, Konwaliowa</option>
+<option>Łochowo, Krasińskiego</option>
+<option>Łochowo, Krokusowa</option>
+<option>Łochowo, Ks.T. Leśniewicza</option>
+<option>Łochowo, Kwiatowa</option>
+<option>Łochowo, Lamparcia</option>
+<option>Łochowo, Laskowa</option>
+<option>Łochowo, Lazurytowa</option>
+<option>Łochowo, Leszczynowa (do Nr 12D)</option>
+<option>Łochowo, Leszczynowa (powyżej Nr 12D)</option>
+<option>Łochowo, Leśna</option>
+<option>Łochowo, Letniskowa</option>
+<option>Łochowo, Lilakowa</option>
+<option>Łochowo, Lipowa</option>
+<option>Łochowo, Lisia</option>
+<option>Łochowo, Liściasta</option>
+<option>Łochowo, Loferskiego</option>
+<option>Łochowo, Lwia</option>
+<option>Łochowo, Łochowskiego</option>
+<option>Łochowo, M.Reja</option>
+<option>Łochowo, Mahoniowa</option>
+<option>Łochowo, Makowa</option>
+<option>Łochowo, Malinowa</option>
+<option>Łochowo, Malownicza</option>
+<option>Łochowo, Migdałowa</option>
+<option>Łochowo, Miła</option>
+<option>Łochowo, Miodowa</option>
+<option>Łochowo, Modrzewiowa</option>
+<option>Łochowo, Morelowa</option>
+<option>Łochowo, Morska</option>
+<option>Łochowo, Morwowa</option>
+<option>Łochowo, Mostowa</option>
+<option>Łochowo, Na tarasie</option>
+<option>Łochowo, Nektarowa</option>
+<option>Łochowo, Niedźwiedzia</option>
+<option>Łochowo, Notecka</option>
+<option>Łochowo, Ogniskowa</option>
+<option>Łochowo, Okopowa</option>
+<option>Łochowo, Olchowa</option>
+<option>Łochowo, Olszynowa</option>
+<option>Łochowo, Opalowa</option>
+<option>Łochowo, Orzechowa</option>
+<option>Łochowo, Pagórek</option>
+<option>Łochowo, Palmowa</option>
+<option>Łochowo, Pantery</option>
+<option>Łochowo, Perłowa</option>
+<option>Łochowo, Piaskowa</option>
+<option>Łochowo, Pieczarkowa</option>
+<option>Łochowo, Piękna</option>
+<option>Łochowo, Plażowa</option>
+<option>Łochowo, Pogodna</option>
+<option>Łochowo, Porzeczkowa</option>
+<option>Łochowo, Poziomkowa</option>
+<option>Łochowo, Promykowa</option>
+<option>Łochowo, Przerwy-Tetmajera</option>
+<option>Łochowo, Przyjemna</option>
+<option>Łochowo, Pumy</option>
+<option>Łochowo, Rubinowa</option>
+<option>Łochowo, Słoneczna</option>
+<option>Łochowo, Sosnowa</option>
+<option>Łochowo, Spacerowa</option>
+<option>Łochowo, Spokojna</option>
+<option>Łochowo, Storczykowa</option>
+<option>Łochowo, Szafirowa</option>
+<option>Łochowo, Szczęśliwa Przystań</option>
+<option>Łochowo, Szmaragdowa</option>
+<option>Łochowo, Szosa Bydgoska - Numery nieparzyste</option>
+<option>Łochowo, Szosa Bydgoska - Numery parzyste</option>
+<option>Łochowo, Szosa Nakielska - Numery nieparzyste</option>
+<option>Łochowo, Szosa Nakielska - Numery parzyste</option>
+<option>Łochowo, Śluzowa</option>
+<option>Łochowo, Śnieżna</option>
+<option>Łochowo, Świerkowa</option>
+<option>Łochowo, Tęczowa</option>
+<option>Łochowo, Topazowa</option>
+<option>Łochowo, Topolowa</option>
+<option>Łochowo, Trzmielowa</option>
+<option>Łochowo, Tygrysia</option>
+<option>Łochowo, W. Reymonta</option>
+<option>Łochowo, W.Szymborskiej</option>
+<option>Łochowo, Wczasowa</option>
+<option>Łochowo, Wesoła</option>
+<option>Łochowo, Wiązowa</option>
+<option>Łochowo, Widok</option>
+<option>Łochowo, Wierzbowa</option>
+<option>Łochowo, Wilcza</option>
+<option>Łochowo, Wiosenna</option>
+<option>Łochowo, Wiśniowa</option>
+<option>Łochowo, Woskowa</option>
+<option>Łochowo, Wrzosowa</option>
+<option>Łochowo, Wycieczkowa</option>
+<option>Łochowo, Wypoczynkowa</option>
+<option>Łochowo, Wyspiańskiego</option>
+<option>Łochowo, Zawiła</option>
+<option>Łochowo, Zimowa</option>
+<option>Łochowo, Żeglarska</option>
+<option>Łochowo, Żurawinowa</option>
+<option>Murowaniec, Agatowa</option>
+<option>Murowaniec, Albatrosa</option>
+<option>Murowaniec, Bazaltowa</option>
+<option>Murowaniec, Bażancia</option>
+<option>Murowaniec, Bielika</option>
+<option>Murowaniec, Bobrowa</option>
+<option>Murowaniec, Bociania</option>
+<option>Murowaniec, Bolenia</option>
+<option>Murowaniec, Bursztynowa</option>
+<option>Murowaniec, Ciernika</option>
+<option>Murowaniec, Cietrzewia</option>
+<option>Murowaniec, Cyranki</option>
+<option>Murowaniec, Czajki</option>
+<option>Murowaniec, Czysta</option>
+<option>Murowaniec, Daleka</option>
+<option>Murowaniec, Diamentowa</option>
+<option>Murowaniec, Dropa</option>
+<option>Murowaniec, Drozda</option>
+<option>Murowaniec, Dzięcioła</option>
+<option>Murowaniec, Flaminga</option>
+<option>Murowaniec, Gawronia</option>
+<option>Murowaniec, Gila</option>
+<option>Murowaniec, Gołębia</option>
+<option>Murowaniec, Granitowa</option>
+<option>Murowaniec, Grysowa</option>
+<option>Murowaniec, Jaskółcza</option>
+<option>Murowaniec, Jastrzębia</option>
+<option>Murowaniec, Kalinowskiego</option>
+<option>Murowaniec, Kamienna</option>
+<option>Murowaniec, Kanarkowa</option>
+<option>Murowaniec, Karasia</option>
+<option>Murowaniec, Karpia</option>
+<option>Murowaniec, Kawki</option>
+<option>Murowaniec, Klenia</option>
+<option>Murowaniec, Kolibra</option>
+<option>Murowaniec, Koralowa</option>
+<option>Murowaniec, Kormorania</option>
+<option>Murowaniec, Kosa</option>
+<option>Murowaniec, Kredowa</option>
+<option>Murowaniec, Kresowa</option>
+<option>Murowaniec, Krucza</option>
+<option>Murowaniec, Krzemowa</option>
+<option>Murowaniec, Kukułcza</option>
+<option>Murowaniec, Leszcza</option>
+<option>Murowaniec, Łabędzia</option>
+<option>Murowaniec, Łochowska</option>
+<option>Murowaniec, Łososia</option>
+<option>Murowaniec, Łyski</option>
+<option>Murowaniec, Marmurowa</option>
+<option>Murowaniec, Nad Potokiem</option>
+<option>Murowaniec, Nurzyka</option>
+<option>Murowaniec, Okonia</option>
+<option>Murowaniec, Opalowa</option>
+<option>Murowaniec, Orla</option>
+<option>Murowaniec, Papuzia</option>
+<option>Murowaniec, Pawia</option>
+<option>Murowaniec, Pelikana</option>
+<option>Murowaniec, Perłowa</option>
+<option>Murowaniec, Piaskowa</option>
+<option>Murowaniec, Płotki</option>
+<option>Murowaniec, Przesmyk</option>
+<option>Murowaniec, Ptasia</option>
+<option>Murowaniec, Puchacza</option>
+<option>Murowaniec, Rajska</option>
+<option>Murowaniec, Rubinowa</option>
+<option>Murowaniec, Rynarzewska</option>
+<option>Murowaniec, Skalna</option>
+<option>Murowaniec, Skowronka</option>
+<option>Murowaniec, Słowicza</option>
+<option>Murowaniec, Sokola</option>
+<option>Murowaniec, Sowia</option>
+<option>Murowaniec, Sójcza</option>
+<option>Murowaniec, Spacerowa</option>
+<option>Murowaniec, Staroszkolna</option>
+<option>Murowaniec, Stepowa</option>
+<option>Murowaniec, Stokrotki</option>
+<option>Murowaniec, Strusia</option>
+<option>Murowaniec, Szkolna</option>
+<option>Murowaniec, Szmaragdowa</option>
+<option>Murowaniec, Topazowa</option>
+<option>Murowaniec, Troci</option>
+<option>Murowaniec, Truskawkowa</option>
+<option>Murowaniec, Turkusowa</option>
+<option>Murowaniec, Wierzbowa</option>
+<option>Murowaniec, Wjazdowa</option>
+<option>Murowaniec, Zięby</option>
+<option>Murowaniec, Zimy</option>
+<option>Murowaniec, Żurawia</option>
+<option>Prądki</option>
+<option>Przyłęki</option>
+<option>Trzciniec</option>
+<option>Zielonka</option>
+
+	</select>   
+	<div class="btnSearchfull">
+	<input type='button' value='Wyświetl harmonogram' id='btnSzukaj' style='width: 100%;'>
+	</div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#596D81;"></div>
+	<div class="naglowek">2023-03-22 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#596D81;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>zmieszane</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#596D81;"></div>
+	<div class="naglowek">2023-04-05 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#596D81;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>zmieszane</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#9F703B;"></div>
+	<div class="naglowek">2023-04-05 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#9F703B;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>biodegradowalne</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#596D81;"></div>
+	<div class="naglowek">2023-04-19 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#596D81;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>zmieszane</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#9F703B;"></div>
+	<div class="naglowek">2023-04-19 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#9F703B;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>biodegradowalne</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#83D3F6;"></div>
+	<div class="naglowek">2023-04-20 (czwartek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#83D3F6;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>odpady wielkogabarytowe</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#83D3F6;"></div>
+	<div class="naglowek">2023-04-20 (czwartek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#83D3F6;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>zużyty sprzęt elektryczny i elektroniczny</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#F9C625;"></div>
+	<div class="naglowek">2023-04-21 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#F9C625;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>metale i tworzywa sztuczne</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#11ADE4;"></div>
+	<div class="naglowek">2023-04-21 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#11ADE4;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>papier i tektura</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#7EC451;"></div>
+	<div class="naglowek">2023-04-21 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#7EC451;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>szkło</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#596D81;"></div>
+	<div class="naglowek">2023-05-05 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#596D81;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>zmieszane</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#9F703B;"></div>
+	<div class="naglowek">2023-05-05 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#9F703B;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>biodegradowalne</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#596D81;"></div>
+	<div class="naglowek">2023-05-17 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#596D81;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>zmieszane</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#9F703B;"></div>
+	<div class="naglowek">2023-05-17 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#9F703B;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>biodegradowalne</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#F9C625;"></div>
+	<div class="naglowek">2023-05-19 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#F9C625;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>metale i tworzywa sztuczne</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#11ADE4;"></div>
+	<div class="naglowek">2023-05-19 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#11ADE4;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>papier i tektura</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#7EC451;"></div>
+	<div class="naglowek">2023-05-19 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#7EC451;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>szkło</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#596D81;"></div>
+	<div class="naglowek">2023-05-31 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#596D81;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>zmieszane</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#9F703B;"></div>
+	<div class="naglowek">2023-05-31 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#9F703B;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>biodegradowalne</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#596D81;"></div>
+	<div class="naglowek">2023-06-14 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#596D81;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>zmieszane</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#9F703B;"></div>
+	<div class="naglowek">2023-06-14 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#9F703B;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>biodegradowalne</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#BEDEF5;"></div>
+	<div class="naglowek">2023-06-14 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#BEDEF5;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>mycie pojemników</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#F9C625;"></div>
+	<div class="naglowek">2023-06-16 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#F9C625;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>metale i tworzywa sztuczne</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#11ADE4;"></div>
+	<div class="naglowek">2023-06-16 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#11ADE4;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>papier i tektura</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#7EC451;"></div>
+	<div class="naglowek">2023-06-16 (piątek)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#7EC451;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>szkło</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#596D81;"></div>
+	<div class="naglowek">2023-06-28 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#596D81;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>zmieszane</h3></div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="termin card">
+	<div class="bok" style="background-color:#9F703B;"></div>
+	<div class="naglowek">2023-06-28 (środa)</div>
+	<div class="kosz wysrodkowanie"><i class="fa fa-trash" style="font-size:40px;color:#9F703B;"></i></div>
+	<div class="srodek wysrodkowanie"><h3>biodegradowalne</h3></div>
+    </div>
+  </div>
+
+
+
+
+        <!-- Script -->
+        <script>
+        $(document).ready(function(){
+            
+            // Initialize select2
+            $("#selUlica").select2({
+  		language: "pl"
+		});
+
+            // Read selected option
+            $('#btnSzukaj').click(function(){
+                var ulica = $('#selUlica option:selected').text();
+           	window.open("https://cloud.fxsystems.com.pl/OdbiorySmieci/HarmonogramOnline.dll?gmina_id=309632&ulica=" + ulica, "_self");
+   
+            });
+        });
+        </script>
+
+
+</body>
+</html>

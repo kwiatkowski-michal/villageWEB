@@ -1,114 +1,107 @@
-
 @media (min-width: 768px) {
-    .trans-yellow{
-        transition: box-shadow 0.15s ease-in-out;
-    }
-    .trans-yellow:hover{
-        box-shadow: 7px 7px #ffc800;
-        transition: box-shadow 0.15s ease-in-out;
-    }
-    
-    .trans-green{
-        transition: box-shadow 0.15s ease-in-out;
-    }
-    .trans-green:hover{
-        box-shadow: 7px 7px #00ac4e;
-        transition: box-shadow 0.15s ease-in-out;
-    }
-    .trans-yellow-btn{
-        transition: box-shadow 0.15s ease-in-out;
-    }
-    .trans-yellow-btn:hover{
-        box-shadow: 7px 7px #ffc800;
-        transition: box-shadow 0.15s ease-in-out;
-    }
-    
-    .trans-green-btn{
-        transition: box-shadow 0.15s ease-in-out;
-    }
-    .trans-green-btn:hover{
-        box-shadow: 7px 7px #00ac4e;
-        transition: box-shadow 0.15s ease-in-out;
-    }
-
+  .trans-yellow {
+    transition: box-shadow 0.15s ease-in-out;
+  }
+  .trans-yellow:hover {
+    box-shadow: 7px 7px #7d8c7b;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+  .trans-green {
+    transition: box-shadow 0.15s ease-in-out;
+  }
+  .trans-green:hover {
+    box-shadow: 7px 7px #001021;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+  .trans-yellow-btn {
+    box-shadow: none;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+  .trans-yellow-btn:hover {
+    box-shadow: 7px 7px #7d8c7b;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+  .trans-green-btn {
+    box-shadow: none;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+  .trans-green-btn:hover {
+    box-shadow: 7px 7px #001021;
+    transition: box-shadow 0.15s ease-in-out;
+  }
 }
-@media (min-width: 576px){
-    .footer-class{
-        text-align: right;
-    }
+@media (min-width: 576px) {
+  .footer-class {
+    text-align: right;
+  }
 }
-@media (max-width: 768px) {
-    .cont-second{
-        padding-top: 4em;
-    }
-}
-
-body{
-    overflow-x: hidden;
+@media (max-width: 992px) {
+  .cont-second {
+    padding-top: 4em;
+  }
 }
 
+body {
+  overflow-x: hidden;
+}
+.cal{
+  font-size: 1rem;
+}
 .c-yellow {
-    background-color: #ffc800;
+  background-color: #7d8c7b;
 }
-.c-green{
-    background-color: #00ac4e;
-}
-iframe {
-    margin-top: 4rem;
+.c-green {
+  background-color: #001021;
 }
 
 .f-100 {
-    font-weight: 100;
+  font-weight: 100;
 }
-.f-600{
-    font-weight: 600;
+.f-600 {
+  font-weight: 600;
 }
 .f-montserrat {
-    font-family: Montserrat, 'sans-serif';
+  font-family: Montserrat, "sans-serif";
 }
-.f-white{
-    color: white;
-    transition: text-decoration 1s ease-in-out;
+.f-white {
+  color: white;
+  transition: text-decoration 1s ease-in-out;
 }
-
-
-
-
 
 .info {
-    text-align: right;
-    text-decoration: none;
-    padding: 0.4em;
+  text-align: right;
+  text-decoration: none;
+  padding: 0.4em;
 }
 
 h1 {
-    font-weight: 600;
-    font-family: Montserrat, 'sans-serif';
+  font-weight: 600;
+  font-family: Montserrat, "sans-serif";
 }
 
 .f-roboto {
-    font-family: Roboto, 'sans-serif';
-    font-weight: 300;
-    font-size: 1.2em;
+  font-family: Roboto, "sans-serif";
+  font-weight: 300;
+  font-size: 1.2em;
 }
 
 .btn-main-1 {
-    background-color: #00ac4e;
-    border: none;
-    font-family: Montserrat, 'sans-serif';
-    font-weight: 600;
+  background-color: #001021;
+  border: none;
+  font-family: Montserrat, "sans-serif";
+  font-weight: 600;
 }
 .btn-main-1:hover {
-    background-color: #00ac4e;
+  background-color: #001021;
 }
 
 .btn-main-2 {
-    background-color: #ffc800;
-    border: black;
-    font-family: Montserrat, 'sans-serif';
-    font-weight: 600;
+  background-color: #7d8c7b;
+  border: black;
+  font-family: Montserrat, "sans-serif";
+  font-weight: 600;
 }
 
 .btn-main-2:hover {
-    background-color: #ffc800;
+  background-color: #7d8c7b;
 }
