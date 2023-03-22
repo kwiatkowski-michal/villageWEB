@@ -10,7 +10,7 @@ The project involves creating simple, clear, and consistent websites for each vi
 
 Strony internetowe dla gminy Białe Błota z wykorzystaniem Bootstrapa.
 
-# O projekcie
+## O projekcie
 
 Projekt zakłada stworzenie prostych, przejrzystych i spójnych stron internetowych dla każdego sołectwa w Gminie Białe Błota.
 
