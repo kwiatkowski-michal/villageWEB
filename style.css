@@ -75,7 +75,6 @@ body {
 }
 .f-white {
   color: white;
-  transition: text-decoration 1s ease-in-out;
 }
 
 .info {
@@ -84,9 +83,14 @@ body {
   padding: 0.4em;
 }
 
-h1 {
+h1{
+  font-family: Montserrat, 'sans-serif';
+  font-weight: 800;
+}
+
+h2{
+  font-family: Montserrat, 'sans-serif';
   font-weight: 600;
-  font-family: Montserrat, "sans-serif";
 }
 
 .f-roboto {
