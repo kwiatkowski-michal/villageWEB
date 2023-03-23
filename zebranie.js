@@ -13,7 +13,8 @@ fetch("zebrania.txt")
 
     // Wyświetl wynik na stronie
     const wynik = document.getElementById("wynik");
-
+    const calendar = document.getElementById("calendar")
+    
     // Tworzenie linku do dodania wydarzenia w kalendarzu Google
     const googleCalendarLink = "https://www.google.com/calendar/render?action=TEMPLATE" +
       "&text=Zebranie%20wiejskie" +
@@ -23,24 +24,28 @@ fetch("zebrania.txt")
       "&sf=true&output=xml";
 
     // Tworzenie elementu <a> do linku
-    const calendarBold = document.createElement("a")
-    calendarBold.classList="text-decoration-none f-white f-montserrat f-600"
-    calendarBold.innerText = " Kalendarza Google "
+    const br = document.createElement("br")
+    const calendarIcon = document.createElement("i");
+    calendarIcon.classList=" bi-box-arrow-up-right";
+    const calendarBold = document.createElement("a");
+    calendarBold.classList="text-decoration-none f-white f-montserrat f-600";
+    calendarBold.innerText = " Kalendarza Google ";
+    calendarBold.href = googleCalendarLink;
+    calendarBold.target = "_blank";
+    calendarBold.appendChild(calendarIcon)
 
-    const calendarIcon = document.createElement("i")
-    calendarIcon.classList=" bi-box-arrow-up-right"
-
+    const dodajDo = document.createElement("a");
+    dodajDo.classList = "f-white text-decoration-none"
+    dodajDo.innerText = 'Dodaj do';
 
     const calendarLink = document.createElement("a");
-    calendarLink.href = googleCalendarLink;
-    calendarLink.target = "_blank";
-    calendarLink.classList = "f-white text-decoration-none"
-    calendarLink.innerText = 'Dodaj do';
     calendarLink.appendChild(calendarBold)
-    calendarLink.appendChild(calendarIcon)
     // Dodanie elementów do wyniku
-    wynik.innerHTML=closestDate.getDate() + " " + months[closestDate.getMonth()] + " " + closestDate.getFullYear();
-    wynik.appendChild(document.createElement("br"));
+    fullDate=closestDate.getDate() + " " + months[closestDate.getMonth()] + " " + closestDate.getFullYear();
+    wynik.innerHTML=fullDate+"<br>"
+    wynik.appendChild(dodajDo)
+    //wynik.appendChild(br)
+    
     wynik.appendChild(calendarLink);
   })
   .catch(error => {

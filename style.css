@@ -43,6 +43,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: Roboto, 'sans-serif';
 }
 .cal{
   font-size: 1rem;
