@@ -41,6 +41,15 @@
   }
 }
 
+.active{
+  font-family: montserrat;
+  font-weight: 600;
+}
+
+.justify-text{
+  text-align: justify;
+}
+
 body {
   overflow-x: hidden;
   font-family: Roboto, 'sans-serif';
