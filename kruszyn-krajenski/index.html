@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kruszyn Krajeński - wizytówka miejscowości</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -94,17 +97,91 @@
       </div>
       <div class="cont-second col-lg-6 col-md-12">
         <div class="h-100 p-5 c-green trans-yellow rounded-3">
-          <h2 class="f-600">Wywóz śmieci</h2>
-          <iframe  width="100%" height="400" src="https://cloud.fxsystems.com.pl/OdbiorySmieci/HarmonogramOnline.dll?gmina_id=309632"></iframe> </p>
-          <button type="button" class="btn btn-main-2 btn-default f-white btn-lg px-4">Kontakt</button>
+          
+          <h2 class="f-600"><i class="bi-trash"></i> Wywóz śmieci</h2>
+          <div id="smieci"></div>
+          <select class="form-select f-roboto fs-6 mb-3">
+            <option selected>Open this select menu</option>
+            <option>Akacjowa</option>
+            <option>Białobłocka</option>
+            <option>Brzozowa</option>
+            <option>Bukowa</option>
+            <option>Bukszpanowa</option>
+            <option>Ceramiczna</option>
+            <option>Chlebowa</option>
+            <option>Cisowa</option>
+            <option>Dębowa</option>
+            <option>dz.nr 182/7</option>
+            <option>Fiołkowa</option>
+            <option>Gerberowa</option>
+            <option>Grabowa</option>
+            <option>Hortensji</option>
+            <option>Irgowa</option>
+            <option>Jałowcowa</option>
+            <option>Jarzębinowa</option>
+            <option>Jasiniecka</option>
+            <option>Jasna</option>
+            <option>Jesionowa</option>
+            <option>Kasztanowa</option>
+            <option>Klonowa</option>
+            <option>Kolejowa</option>
+            <option>Kwiatowa</option>
+            <option>Leszczynowa</option>
+            <option>Leśna</option>
+            <option>Leśna dz. 162/18</option>
+            <option>Leśna Przystań</option>
+            <option>Liliowa</option>
+            <option>Lipowa</option>
+            <option>Łąkowa</option>
+            <option>Łochowska</option>
+            <option>Magnoliowa</option>
+            <option>Mokra</option>
+            <option>Morwowa</option>
+            <option>Mroźna</option>
+            <option>Ogrodowa</option>
+            <option>Ogrodowa - teren "ROD Kruszynka "</option>
+            <option>Olszynopwa</option>
+            <option>Olszynowa</option>
+            <option>Osiedlowa</option>
+            <option>Osikowa</option>
+            <option>Patrolowa</option>
+            <option>Polna</option>
+            <option>Porzeczkowa</option>
+            <option>Promykowa</option>
+            <option>Przemysłowa</option>
+            <option>Przyjazna</option>
+            <option>Siewna</option>
+            <option>Siewna dz.216/9</option>
+            <option>Słomkowa</option>
+            <option>Słoneczna</option>
+            <option>Sosnowa</option>
+            <option>Stepowa</option>
+            <option>Storczykowa</option>
+            <option>Storczykowa dz. nr 139/38</option>
+            <option>Stroczykowa</option>
+            <option>Szosa Szubińska</option>
+            <option>Szosa Szubińska (lewa strona numery parzyste)</option>
+            <option>Szumiąca</option>
+            <option>Świerkowa</option>
+            <option>Topolowa</option>
+            <option>Usługowa</option>
+            <option>Wiązowa</option>
+            <option>Wierzbowa</option>
+            <option>Wiśniowa</option>
+            <option>Wjazdowa</option>
+            <option>Wyjazdowa</option>
+            <option>Zaciszna</option>
+            <option>Zaciszna dz. nr 154/134</option>
+            <option>Zbożowa</option>
+            <option>Żytnia</option>
+          </select>
+          <button type="button" class="btn btn-main-2 btn-dark f-white btn-lg px-4">Pokaż terminy</button>
         </div>
       </div>
     </div>
   </div>
   <div class="container mt-5">
-    <iframe id="mapa" width="100%" height="300" frameborder="" scrolling="no" marginheight="0" marginwidth="0"
-      src="https://www.openstreetmap.org/export/embed.html?bbox=17.808837890625004%2C53.048024346506224%2C17.937583923339847%2C53.11216288766498&amp;layer=mapnik"
-      ></iframe><br />
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9586.393888246363!2d17.85589274314744!3d53.08148592878858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47036d5333cd6c27%3A0x21ad62aa5fcf93e!2s86-005%20Kruszyn%20Kraje%C5%84ski!5e0!3m2!1spl!2spl!4v1679563695614!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <div class="container">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-2 py-5 pb-0 my-5 border-top">
@@ -133,11 +210,8 @@
         </a>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+ 
   <script src="./zebranie.js"></script>
-  <script src="./smieci.js"></script>
 </body>
 
 </html>
