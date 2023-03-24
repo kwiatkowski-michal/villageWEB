@@ -1,52 +1,41 @@
 @media (min-width: 768px) {
-  .trans-yellow {
+  .trans-1 {
     transition: box-shadow 0.15s ease-in-out;
   }
-  .trans-yellow:hover {
+
+  .trans-1:hover {
     box-shadow: 7px 7px #7d8c7b;
     transition: box-shadow 0.15s ease-in-out;
   }
-  .trans-green {
+
+  .trans-2 {
     transition: box-shadow 0.15s ease-in-out;
   }
-  .trans-green:hover {
-    box-shadow: 7px 7px #001021;
-    transition: box-shadow 0.15s ease-in-out;
-  }
-  .trans-yellow-btn {
-    box-shadow: none;
-    transition: box-shadow 0.15s ease-in-out;
-  }
-  .trans-yellow-btn:hover {
-    box-shadow: 7px 7px #7d8c7b;
-    transition: box-shadow 0.15s ease-in-out;
-  }
-  .trans-green-btn {
-    box-shadow: none;
-    transition: box-shadow 0.15s ease-in-out;
-  }
-  .trans-green-btn:hover {
-    box-shadow: 7px 7px #001021;
+
+  .trans-2:hover {
+    box-shadow: 7px 7px #172815;
     transition: box-shadow 0.15s ease-in-out;
   }
 }
+
 @media (min-width: 576px) {
   .footer-class {
     text-align: right;
   }
 }
+
 @media (max-width: 992px) {
   .cont-second {
     padding-top: 4em;
   }
 }
 
-.active{
+.active {
   font-family: montserrat;
   font-weight: 600;
 }
 
-.justify-text{
+.justify-text {
   text-align: justify;
 }
 
@@ -55,25 +44,31 @@ body {
   font-family: Roboto, 'sans-serif';
   padding-top: 80px;
 }
-.cal{
+
+.cal {
   font-size: 1rem;
 }
-.c-yellow {
+
+.c-1 {
   background-color: #7d8c7b;
 }
-.c-green {
-  background-color: #001021;
+
+.c-2 {
+  background-color: #172815;
 }
 
 .f-100 {
   font-weight: 100;
 }
+
 .f-600 {
   font-weight: 600;
 }
+
 .f-montserrat {
   font-family: Montserrat, "sans-serif";
 }
+
 .f-white {
   color: white;
 }
@@ -84,12 +79,12 @@ body {
   padding: 0.4em;
 }
 
-h1{
+h1 {
   font-family: Montserrat, 'sans-serif';
   font-weight: 800;
 }
 
-h2{
+h2 {
   font-family: Montserrat, 'sans-serif';
   font-weight: 600;
 }
@@ -101,13 +96,14 @@ h2{
 }
 
 .btn-main-1 {
-  background-color: #001021;
+  background-color: #172815;
   border: none;
   font-family: Montserrat, "sans-serif";
   font-weight: 600;
 }
+
 .btn-main-1:hover {
-  background-color: #001021;
+  background-color: #172815;
 }
 
 .btn-main-2 {
