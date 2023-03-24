@@ -41,7 +41,7 @@
   </nav>
   <!-- Welcome section/container -->
   <div id="home" class="container col-xxl py-5">
-    <div class="row flex-lg-row-reverse align-items-center m-2 m-sm-0 ">
+    <div class="row flex-lg-row-reverse align-items-center m-2 m-sm-0">
       <div class="col-lg-6">
         <img src="./img/herb.svg" class="d-block mx-lg-auto img-fluid" width="200" height="500" loading="lazy">
       </div>
@@ -65,15 +65,15 @@
   </div>
   <!-- Facts container -->
   <div class="container f-white">
-    <div class="row align-items-md-stretch">
-      <div class="col-lg-6 col-md-12">
-        <div class="h-100 p-5 m-2 m-sm-0 c-1 trans-2 rounded-3">
+    <div class="row row-cols-1 row-cols-lg-2 align-items-md-stretch row-gap-4 m-2 m-sm-0">
+      <div class="col">
+        <div class="h-100 p-5 c-1 trans-2 rounded-3">
           <div class="mb-3">
-            <h2><i class="bi bi-people"></i> Liczba ludności</h2>
+            <h2><i class="bi bi-people"></i> Liczba mieszkańców</h2>
             <div>1 598 osób</div>
           </div>
           <div class="mb-3">
-            <h2><i class="bi bi-textarea"></i> Pole powierzchni</h2>
+            <h2><i class="bi bi-textarea"></i> Powierzchnia</h2>
             <div>15,35 km<sup>2</sup></div>
           </div>
           <div class="mb-3">
@@ -84,7 +84,7 @@
             </div>
           </div>
           <div class="mb-3">
-            <h2><i class="bi bi-bank"></i> Skład Rady Sołeckiej</h2>
+            <h2><i class="bi bi-bank"></i> Rada Sołecka</h2>
             <div>
               <div>Marek Łudziński <desc class="f-montserrat fw-semibold">- przewodniczący</desc>
               </div>
@@ -96,97 +96,115 @@
             </div>
           </div>
           <div>
-            <h2 class="fw-semibold f-montserrat"><i class="bi bi-calendar"></i> Najbliższe zebranie</h2>
+            <h2 class="fw-semibold f-montserrat"><i class="bi bi-calendar2-check"></i> Najbliższe zebranie</h2>
             <div id="wynik" class="f-white">Wczytywanie...</div>
             <div id="calendar"></div>
           </div>
         </div>
       </div>
-      <div class="cont-second col-lg-6 col-md-12">
-        <div class="h-100 p-5 m-2 m-sm-0 c-2 trans-1 rounded-3">
-          <h2 class="fw-semibold f-montserrat"><i class="bi-trash"></i> Wywóz śmieci</h2>
-          <p class="m-1">Wybierz ulicę</p>
-          <select class="form-select f-roboto fs-6 mb-3">
-            <option>Akacjowa</option>
-            <option>Białobłocka</option>
-            <option>Brzozowa</option>
-            <option>Bukowa</option>
-            <option>Bukszpanowa</option>
-            <option>Ceramiczna</option>
-            <option>Chlebowa</option>
-            <option>Cisowa</option>
-            <option>Dębowa</option>
-            <option>dz.nr 182/7</option>
-            <option>Fiołkowa</option>
-            <option>Gerberowa</option>
-            <option>Grabowa</option>
-            <option>Hortensji</option>
-            <option>Irgowa</option>
-            <option>Jałowcowa</option>
-            <option>Jarzębinowa</option>
-            <option>Jasiniecka</option>
-            <option>Jasna</option>
-            <option>Jesionowa</option>
-            <option>Kasztanowa</option>
-            <option>Klonowa</option>
-            <option>Kolejowa</option>
-            <option>Kwiatowa</option>
-            <option>Leszczynowa</option>
-            <option>Leśna</option>
-            <option>Leśna dz. 162/18</option>
-            <option>Leśna Przystań</option>
-            <option>Liliowa</option>
-            <option>Lipowa</option>
-            <option>Łąkowa</option>
-            <option>Łochowska</option>
-            <option>Magnoliowa</option>
-            <option>Mokra</option>
-            <option>Morwowa</option>
-            <option>Mroźna</option>
-            <option>Ogrodowa</option>
-            <option>Ogrodowa - teren "ROD Kruszynka "</option>
-            <option>Olszynopwa</option>
-            <option>Olszynowa</option>
-            <option>Osiedlowa</option>
-            <option>Osikowa</option>
-            <option>Patrolowa</option>
-            <option>Polna</option>
-            <option>Porzeczkowa</option>
-            <option>Promykowa</option>
-            <option>Przemysłowa</option>
-            <option>Przyjazna</option>
-            <option>Siewna</option>
-            <option>Siewna dz.216/9</option>
-            <option>Słomkowa</option>
-            <option>Słoneczna</option>
-            <option>Sosnowa</option>
-            <option>Stepowa</option>
-            <option>Storczykowa</option>
-            <option>Storczykowa dz. nr 139/38</option>
-            <option>Stroczykowa</option>
-            <option>Szosa Szubińska</option>
-            <option>Szosa Szubińska (lewa strona numery parzyste)</option>
-            <option>Szumiąca</option>
-            <option>Świerkowa</option>
-            <option>Topolowa</option>
-            <option>Usługowa</option>
-            <option>Wiązowa</option>
-            <option>Wierzbowa</option>
-            <option>Wiśniowa</option>
-            <option>Wjazdowa</option>
-            <option>Wyjazdowa</option>
-            <option>Zaciszna</option>
-            <option>Zaciszna dz. nr 154/134</option>
-            <option>Zbożowa</option>
-            <option>Żytnia</option>
-          </select>
-          <button type="button" class="btn btn-main-2 btn-dark f-white btn-lg px-4" disabled>Pokaż terminy</button>
+
+      <div class="col">
+        <div class="row row-gap-4">
+          <div>
+            <div class="h-100 p-5 c-2 trans-1 rounded-3">
+              <h2 class="fw-semibold f-montserrat"><i class="bi-trash"></i> Wywóz śmieci</h2>
+              <p class="m-1">Wybierz ulicę</p>
+              <select id="street" class="form-select f-roboto fs-6 mb-3">
+                <option>Akacjowa</option>
+                <option>Białobłocka</option>
+                <option>Brzozowa</option>
+                <option>Bukowa</option>
+                <option>Bukszpanowa</option>
+                <option>Ceramiczna</option>
+                <option>Chlebowa</option>
+                <option>Cisowa</option>
+                <option>Dębowa</option>
+                <option>dz.nr 182/7</option>
+                <option>Fiołkowa</option>
+                <option>Gerberowa</option>
+                <option>Grabowa</option>
+                <option>Hortensji</option>
+                <option>Irgowa</option>
+                <option>Jałowcowa</option>
+                <option>Jarzębinowa</option>
+                <option>Jasiniecka</option>
+                <option>Jasna</option>
+                <option>Jesionowa</option>
+                <option>Kasztanowa</option>
+                <option>Klonowa</option>
+                <option>Kolejowa</option>
+                <option>Kwiatowa</option>
+                <option>Leszczynowa</option>
+                <option>Leśna</option>
+                <option>Leśna dz. 162/18</option>
+                <option>Leśna Przystań</option>
+                <option>Liliowa</option>
+                <option>Lipowa</option>
+                <option>Łąkowa</option>
+                <option>Łochowska</option>
+                <option>Magnoliowa</option>
+                <option>Mokra</option>
+                <option>Morwowa</option>
+                <option>Mroźna</option>
+                <option>Ogrodowa</option>
+                <option>Ogrodowa - teren "ROD Kruszynka "</option>
+                <option>Olszynopwa</option>
+                <option>Olszynowa</option>
+                <option>Osiedlowa</option>
+                <option>Osikowa</option>
+                <option>Patrolowa</option>
+                <option>Polna</option>
+                <option>Porzeczkowa</option>
+                <option>Promykowa</option>
+                <option>Przemysłowa</option>
+                <option>Przyjazna</option>
+                <option>Siewna</option>
+                <option>Siewna dz.216/9</option>
+                <option>Słomkowa</option>
+                <option>Słoneczna</option>
+                <option>Sosnowa</option>
+                <option>Stepowa</option>
+                <option>Storczykowa</option>
+                <option>Storczykowa dz. nr 139/38</option>
+                <option>Stroczykowa</option>
+                <option>Szosa Szubińska</option>
+                <option>Szosa Szubińska (lewa strona numery parzyste)</option>
+                <option>Szumiąca</option>
+                <option>Świerkowa</option>
+                <option>Topolowa</option>
+                <option>Usługowa</option>
+                <option>Wiązowa</option>
+                <option>Wierzbowa</option>
+                <option>Wiśniowa</option>
+                <option>Wjazdowa</option>
+                <option>Wyjazdowa</option>
+                <option>Zaciszna</option>
+                <option>Zaciszna dz. nr 154/134</option>
+                <option>Zbożowa</option>
+                <option>Żytnia</option>
+              </select>
+              <a type="button" id="trash" class="btn btn-main-2 btn-dark f-white btn-lg px-4"><i
+                  class="bi bi-box-arrow-up-right"></i> Pokaż terminy</a>
+            </div>
+          </div>
+          <div>
+            <div class="p-5 c-2 trans-1 rounded-3">
+              <h2 class="fw-semibold f-montserrat"><i class="bi-trash"></i> Lorem ipsum dolor sit</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, eius? Blanditiis aliquam excepturi
+                explicabo aliquid eaque, odio eligendi iusto facilis aperiam commodi expedita, perspiciatis recusandae!
+                Tempora perspiciatis voluptas cum impedit perferendis, in veritatis iure, beatae repellendus, nisi animi
+                quaerat necessitatibus quos harum assumenda suscipit quis. Ex expedita minima perspiciatis cum assumenda
+                dolores explicabo praesentium voluptate quas aut distinctio culpa incidunt alias.</p>
+              <a type="button" class="btn btn-main-2 btn-dark f-white btn-lg px-4">Lorem ipsum</a>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
   <!-- Map embed -->
-  <div class="container mt-5 mt-lg-0 p-3">
+  <div class="container px-3 py-5">
     <iframe id="mapa"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9586.393888246363!2d17.85589274314744!3d53.08148592878858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47036d5333cd6c27%3A0x21ad62aa5fcf93e!2s86-005%20Kruszyn%20Kraje%C5%84ski!5e0!3m2!1spl!2spl!4v1679563695614!5m2!1spl!2spl"
       width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
@@ -225,7 +243,7 @@
         </a>
     </div>
   </div>
-
+  <script src="./smieci.js"></script>
   <script src="./zebranie.js"></script>
 </body>
 
