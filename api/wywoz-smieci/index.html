@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wasteAPI</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;800&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="h-100 p-5 c-2 trans-1 rounded-3">
+        <h2 class="fw-semibold f-montserrat"><i class="bi-trash"></i> Wywóz śmieci</h2>
+        <p class="m-1">Wybierz ulicę</p>
+        <select id="street" class="form-select f-roboto fs-6 mb-3">
+          <option>Akacjowa</option>
+          <option>Białobłocka</option>
+          <option>Brzozowa</option>
+          <option>Bukowa</option>
+          <option>Bukszpanowa</option>
+          <option>Ceramiczna</option>
+          <option>Chlebowa</option>
+          <option>Cisowa</option>
+          <option>Dębowa</option>
+          <option>dz.nr 182/7</option>
+          <option>Fiołkowa</option>
+          <option>Gerberowa</option>
+          <option>Grabowa</option>
+          <option>Hortensji</option>
+          <option>Irgowa</option>
+          <option>Jałowcowa</option>
+          <option>Jarzębinowa</option>
+          <option>Jasiniecka</option>
+          <option>Jasna</option>
+          <option>Jesionowa</option>
+          <option>Kasztanowa</option>
+          <option>Klonowa</option>
+          <option>Kolejowa</option>
+          <option>Kwiatowa</option>
+          <option>Leszczynowa</option>
+          <option>Leśna</option>
+          <option>Leśna dz. 162/18</option>
+          <option>Leśna Przystań</option>
+          <option>Liliowa</option>
+          <option>Lipowa</option>
+          <option>Łąkowa</option>
+          <option>Łochowska</option>
+          <option>Magnoliowa</option>
+          <option>Mokra</option>
+          <option>Morwowa</option>
+          <option>Mroźna</option>
+          <option>Ogrodowa</option>
+          <option>Ogrodowa - teren "ROD Kruszynka "</option>
+          <option>Olszynopwa</option>
+          <option>Olszynowa</option>
+          <option>Osiedlowa</option>
+          <option>Osikowa</option>
+          <option>Patrolowa</option>
+          <option>Polna</option>
+          <option>Porzeczkowa</option>
+          <option>Promykowa</option>
+          <option>Przemysłowa</option>
+          <option>Przyjazna</option>
+          <option>Siewna</option>
+          <option>Siewna dz.216/9</option>
+          <option>Słomkowa</option>
+          <option>Słoneczna</option>
+          <option>Sosnowa</option>
+          <option>Stepowa</option>
+          <option>Storczykowa</option>
+          <option>Storczykowa dz. nr 139/38</option>
+          <option>Stroczykowa</option>
+          <option>Szosa Szubińska</option>
+          <option>Szosa Szubińska (lewa strona numery parzyste)</option>
+          <option>Szumiąca</option>
+          <option>Świerkowa</option>
+          <option>Topolowa</option>
+          <option>Usługowa</option>
+          <option>Wiązowa</option>
+          <option>Wierzbowa</option>
+          <option>Wiśniowa</option>
+          <option>Wjazdowa</option>
+          <option>Wyjazdowa</option>
+          <option>Zaciszna</option>
+          <option>Zaciszna dz. nr 154/134</option>
+          <option>Zbożowa</option>
+          <option>Żytnia</option>
+        </select>
+        <a type="button" id="trash" class="btn btn-main-2 btn-dark f-white btn-lg px-4"><i
+            class="bi bi-box-arrow-up-right"></i> Pokaż terminy</a>
+      </div>
+    </div>
+    <script src="./smieci.js"></script>
+</body>
+</html>
