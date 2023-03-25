@@ -47,10 +47,14 @@
   text-align: justify;
 }
 
+.algin-text-right {
+  text-align: right;
+}
+
 body {
   overflow-x: hidden;
   font-family: Roboto, 'sans-serif';
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .cal {

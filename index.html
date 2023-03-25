@@ -70,24 +70,24 @@
   <!-- Facts container -->
   <div class="container f-white">
     <div class="row row-cols-1 row-cols-lg-2 align-items-md-stretch row-gap-4 m-2 m-sm-0">
-      <div class="col">
-        <div class="h-100 p-5 c-1 trans-2 rounded-3">
-          <div class="mb-3">
+      <div class="col pe-lg-4">
+        <div class="row h-100 p-5 c-1 trans-2 rounded-3">
+          <div class="">
             <h2><i class="bi bi-people"></i> Liczba mieszkańców</h2>
             <div>1 598 osób</div>
           </div>
-          <div class="mb-3">
+          <div class="">
             <h2><i class="bi bi-textarea"></i> Powierzchnia</h2>
             <div>15,35 km<sup>2</sup></div>
           </div>
-          <div class="mb-3">
+          <div class="">
             <h2><i class="bi bi-person-check"></i> Sołtys</h2>
             <div>Anetta Steltmann<br>
               <a class="f-white" href="mailto:kruszynkrajenski@bialeblota.eu"><i class="bi bi-envelope"></i></a>
               <a class="f-white mx-3" href="tel:+48536137323"><i class="bi bi-telephone"></i></a>
             </div>
           </div>
-          <div class="mb-3">
+          <div class="">
             <h2><i class="bi bi-bank"></i> Rada Sołecka</h2>
             <div>
               <div>Marek Łudziński <desc class="f-montserrat fw-semibold">- przewodniczący</desc>
@@ -106,115 +106,137 @@
           </div>
         </div>
       </div>
-
-      <div class="col">
-        <div class="row row-gap-4">
-          <div>
-            <div class="h-100 p-5 c-2 trans-1 rounded-3">
-              <h2 class="fw-semibold f-montserrat"><i class="bi-trash"></i> Wywóz śmieci</h2>
-              <p class="m-1">Wybierz ulicę</p>
-              <select id="street" class="form-select f-roboto fs-6 mb-3">
-                <option>Akacjowa</option>
-                <option>Białobłocka</option>
-                <option>Brzozowa</option>
-                <option>Bukowa</option>
-                <option>Bukszpanowa</option>
-                <option>Ceramiczna</option>
-                <option>Chlebowa</option>
-                <option>Cisowa</option>
-                <option>Dębowa</option>
-                <option>dz.nr 182/7</option>
-                <option>Fiołkowa</option>
-                <option>Gerberowa</option>
-                <option>Grabowa</option>
-                <option>Hortensji</option>
-                <option>Irgowa</option>
-                <option>Jałowcowa</option>
-                <option>Jarzębinowa</option>
-                <option>Jasiniecka</option>
-                <option>Jasna</option>
-                <option>Jesionowa</option>
-                <option>Kasztanowa</option>
-                <option>Klonowa</option>
-                <option>Kolejowa</option>
-                <option>Kwiatowa</option>
-                <option>Leszczynowa</option>
-                <option>Leśna</option>
-                <option>Leśna dz. 162/18</option>
-                <option>Leśna Przystań</option>
-                <option>Liliowa</option>
-                <option>Lipowa</option>
-                <option>Łąkowa</option>
-                <option>Łochowska</option>
-                <option>Magnoliowa</option>
-                <option>Mokra</option>
-                <option>Morwowa</option>
-                <option>Mroźna</option>
-                <option>Ogrodowa</option>
-                <option>Ogrodowa - teren "ROD Kruszynka "</option>
-                <option>Olszynopwa</option>
-                <option>Olszynowa</option>
-                <option>Osiedlowa</option>
-                <option>Osikowa</option>
-                <option>Patrolowa</option>
-                <option>Polna</option>
-                <option>Porzeczkowa</option>
-                <option>Promykowa</option>
-                <option>Przemysłowa</option>
-                <option>Przyjazna</option>
-                <option>Siewna</option>
-                <option>Siewna dz.216/9</option>
-                <option>Słomkowa</option>
-                <option>Słoneczna</option>
-                <option>Sosnowa</option>
-                <option>Stepowa</option>
-                <option>Storczykowa</option>
-                <option>Storczykowa dz. nr 139/38</option>
-                <option>Stroczykowa</option>
-                <option>Szosa Szubińska</option>
-                <option>Szosa Szubińska (lewa strona numery parzyste)</option>
-                <option>Szumiąca</option>
-                <option>Świerkowa</option>
-                <option>Topolowa</option>
-                <option>Usługowa</option>
-                <option>Wiązowa</option>
-                <option>Wierzbowa</option>
-                <option>Wiśniowa</option>
-                <option>Wjazdowa</option>
-                <option>Wyjazdowa</option>
-                <option>Zaciszna</option>
-                <option>Zaciszna dz. nr 154/134</option>
-                <option>Zbożowa</option>
-                <option>Żytnia</option>
-              </select>
-              <a type="button" id="trash" class="btn btn-main-2 btn-dark f-white btn-lg px-4"><i
-                  class="bi bi-box-arrow-up-right"></i> Pokaż terminy</a>
-            </div>
+      <div class="col ps-lg-4">
+        <div class="row pb-3">
+          <div class="p-5 c-2 trans-1 rounded-3">
+            <h2><i class="bi-trash"></i> Wywóz śmieci</h2>
+            <p class="m-1">Wybierz ulicę</p>
+            <select id="street" class="form-select f-roboto fs-6 mb-3">
+              <option>Akacjowa</option>
+              <option>Białobłocka</option>
+              <option>Brzozowa</option>
+              <option>Bukowa</option>
+              <option>Bukszpanowa</option>
+              <option>Ceramiczna</option>
+              <option>Chlebowa</option>
+              <option>Cisowa</option>
+              <option>Dębowa</option>
+              <option>dz.nr 182/7</option>
+              <option>Fiołkowa</option>
+              <option>Gerberowa</option>
+              <option>Grabowa</option>
+              <option>Hortensji</option>
+              <option>Irgowa</option>
+              <option>Jałowcowa</option>
+              <option>Jarzębinowa</option>
+              <option>Jasiniecka</option>
+              <option>Jasna</option>
+              <option>Jesionowa</option>
+              <option>Kasztanowa</option>
+              <option>Klonowa</option>
+              <option>Kolejowa</option>
+              <option>Kwiatowa</option>
+              <option>Leszczynowa</option>
+              <option>Leśna</option>
+              <option>Leśna dz. 162/18</option>
+              <option>Leśna Przystań</option>
+              <option>Liliowa</option>
+              <option>Lipowa</option>
+              <option>Łąkowa</option>
+              <option>Łochowska</option>
+              <option>Magnoliowa</option>
+              <option>Mokra</option>
+              <option>Morwowa</option>
+              <option>Mroźna</option>
+              <option>Ogrodowa</option>
+              <option>Ogrodowa - teren "ROD Kruszynka "</option>
+              <option>Olszynopwa</option>
+              <option>Olszynowa</option>
+              <option>Osiedlowa</option>
+              <option>Osikowa</option>
+              <option>Patrolowa</option>
+              <option>Polna</option>
+              <option>Porzeczkowa</option>
+              <option>Promykowa</option>
+              <option>Przemysłowa</option>
+              <option>Przyjazna</option>
+              <option>Siewna</option>
+              <option>Siewna dz.216/9</option>
+              <option>Słomkowa</option>
+              <option>Słoneczna</option>
+              <option>Sosnowa</option>
+              <option>Stepowa</option>
+              <option>Storczykowa</option>
+              <option>Storczykowa dz. nr 139/38</option>
+              <option>Stroczykowa</option>
+              <option>Szosa Szubińska</option>
+              <option>Szosa Szubińska (lewa strona numery parzyste)</option>
+              <option>Szumiąca</option>
+              <option>Świerkowa</option>
+              <option>Topolowa</option>
+              <option>Usługowa</option>
+              <option>Wiązowa</option>
+              <option>Wierzbowa</option>
+              <option>Wiśniowa</option>
+              <option>Wjazdowa</option>
+              <option>Wyjazdowa</option>
+              <option>Zaciszna</option>
+              <option>Zaciszna dz. nr 154/134</option>
+              <option>Zbożowa</option>
+              <option>Żytnia</option>
+            </select>
+            <a id="trash" class="btn btn-main-2 btn-dark f-white btn-lg px-4"><i class="bi bi-box-arrow-up-right"></i>
+              Pokaż terminy</a>
           </div>
-          <div>
-            <div class="p-5 c-2 trans-1 rounded-3">
-              <h2 class="fw-semibold f-montserrat"><i class="bi-file-earmark"></i> Dokumenty</h2>
+        </div>
+        <div class="row pt-2">
+          <div class="p-5 c-2 trans-1 rounded-3">
+            <div class="row gap-3">
+              <h2><i class="bi-file-earmark"></i> Dokumenty</h2>
               <div>
-
+                Wniosek o przywrócenie wykreślonych z budżetu inwestycji
+                <small class="text-white-50"> 25.01.2023</small><br>
+                <a href="./docs/2023/january/budzet-2023.jpeg" target="_blank"
+                  class="btn btn-sm btn-outline-light mt-2 f-montserrat fw-semibold">Zobacz</a>
               </div>
-              <a type="button" class="btn btn-main-2 btn-dark f-white btn-lg px-4"><i
-                class="bi bi-box-arrow-up-right"></i> Zobacz więcej</a>
+              <div>
+                Wniosek o wykreślenie zadań<small class="text-white-50"> 11.01.2023</small><br>
+                <a href="./docs/2023/january/budzet-2023.jpeg" target="_blank"
+                  class="btn btn-sm btn-outline-light f-montserrat mt-2 fw-semibold">Zobacz</a>
+              </div>
+              <div>
+                Zmiany na liniach autobusowych<small class="text-white-50"> 04.01.2023</small><br>
+                <div class="btn-group mt-2">
+                  <a href="./docs/2023/january/pismo-autobusy.jpg" target="_blank"
+                    class="btn btn-sm btn-outline-light f-montserrat fw-semibold">Pismo</a>
+                  <a href="https://zdmikp.bydgoszcz.pl/rozklady/paczka/linie.htm" target="_blank"
+                    class="btn btn-sm btn-outline-light f-montserrat fw-semibold"><i
+                      class="bi bi-box-arrow-up-right"></i>
+                    Nowe
+                    rozkłady</a>
+                </div>
+              </div>
+              <div class="mt-2">
+                <a href="./dokumenty.html" class="btn btn-main-2 btn-dark f-white btn-lg px-4"><i
+                    class="bi bi-box-arrow-up-right"></i> Zobacz
+                  więcej</a>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
   <!-- Map embed -->
-  <div class="container px-3 py-5">
+  <div class="container py-4">
     <iframe id="mapa"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9586.393888246363!2d17.85589274314744!3d53.08148592878858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47036d5333cd6c27%3A0x21ad62aa5fcf93e!2s86-005%20Kruszyn%20Kraje%C5%84ski!5e0!3m2!1spl!2spl!4v1679563695614!5m2!1spl!2spl"
       width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+  </div>
   <!-- Footer -->
-  <div class="container border-top px-4 px-md-0 py-4">
+  <div class="container border-top pt-4">
     <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
       <div class="col mb-3">
         <a href="https://bip.bialeblota.pl" target="_blank"
@@ -226,7 +248,8 @@
       <div class="col mb-3 footer-class">
         <h5></h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="./cookies.html" class="nav-link p-0 text-muted">Polityka prywatności</a>
+          <li class="nav-item mb-2"><a href="./cookies.html" class="nav-link p-0 text-muted">Polityka
+              prywatności</a>
           </li>
         </ul>
       </div>
@@ -243,7 +266,7 @@
         <a>&nbsp;Oficjalna strona</a>
         <a class="text-muted text-decoration-none fw-bold" target="_blank" href="https://bialeblota.pl">Gminy Białe
           Błota
-          <i aria-hidden="true" class="bi bi-box-arrow-up-right"></i>
+          <i class="bi bi-box-arrow-up-right"></i>
         </a>
     </div>
   </div>
