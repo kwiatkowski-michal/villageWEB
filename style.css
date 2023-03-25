@@ -18,6 +18,14 @@
   }
 }
 
+.trans-sm-1:hover{
+  box-shadow: 4px 4px #7d8c7b;
+}
+
+.trans-sm-2:hover{
+  box-shadow: 4px 4px #172815;
+}
+
 @media (min-width: 576px) {
   .footer-class {
     text-align: right;
