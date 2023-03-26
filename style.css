@@ -18,11 +18,11 @@
   }
 }
 
-.trans-sm-1:hover{
+.trans-sm-1:hover {
   box-shadow: 4px 4px #7d8c7b;
 }
 
-.trans-sm-2:hover{
+.trans-sm-2:hover {
   box-shadow: 4px 4px #172815;
 }
 
@@ -36,6 +36,10 @@
   .cont-second {
     padding-top: 4em;
   }
+}
+
+.dark-shadow-cookies {
+  box-shadow: 7px 7px #172815;
 }
 
 .active {
@@ -53,7 +57,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: Roboto, 'sans-serif';
+  font-family: Roboto, "sans-serif";
   padding-top: 100px;
 }
 
@@ -91,8 +95,9 @@ body {
   padding: 0.4em;
 }
 
-h2, h1 {
-  font-family: Montserrat, 'sans-serif';
+h2,
+h1 {
+  font-family: Montserrat, "sans-serif";
   font-weight: 600;
 }
 
