@@ -14,6 +14,4 @@ Strona internetowa dla Kruszyna Krajeńskiego (gm. Białe Błota) z wykorzystani
 
 Projekt zakłada stworzenie prostej, przejrzystej i spójnej strony internetowej dla sołectwa w Gminie Białe Błota.
 
-[Kruszyn Krajeński - strona](https://kwiatkowski-michal.github.io/villageWEB/kruszyn-krajenski/index.html)
-
 
