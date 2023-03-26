@@ -73,14 +73,6 @@ body {
   background-color: #172815;
 }
 
-.f-100 {
-  font-weight: 100;
-}
-
-.f-600 {
-  font-weight: 600;
-}
-
 .f-montserrat {
   font-family: Montserrat, "sans-serif";
 }
@@ -108,23 +100,31 @@ h1 {
 }
 
 .btn-main-1 {
-  background-color: #172815;
-  border: none;
-  font-family: Montserrat, "sans-serif";
-  font-weight: 600;
-}
-
-.btn-main-1:hover {
-  background-color: #172815;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: #172815;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #172815;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: #172815;
+  --bs-btn-active-border-color: none;
+  --bs-btn-font-family: Montserrat, "sans-serif";
 }
 
 .btn-main-2 {
-  background-color: #7d8c7b;
-  border: black;
-  font-family: Montserrat, "sans-serif";
-  font-weight: 600;
-}
-
-.btn-main-2:hover {
-  background-color: #7d8c7b;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: #7d8c7d;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #7d8c7d;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: #7d8c7d;
+  --bs-btn-active-border-color: none;
+  --bs-btn-font-family: Montserrat, "sans-serif";
 }
