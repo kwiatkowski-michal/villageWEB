@@ -23,12 +23,14 @@ if (!cookieAccepted) {
   toast.show();
   const closeButton = document.querySelector("#cookie-toast .btn-close");
   closeButton.addEventListener("click", () => {
-    const section = document.querySelector("#section-to-hide");
+    const section = document.querySelector("#cookie-toast");
     section.style.display = "none";
-    document.cookie = "cookieAccepted=true";
+    const expirationDate = new Date();
+    expirationDate.setDate(expirationDate.getDate() + 30);
+    document.cookie =
+      "cookieAccepted=true; expires=" +
+      expirationDate.toUTCString() +
+      "; path=/";
     toast.hide();
   });
-} else {
-  const section = document.querySelector("#section-to-hide");
-  section.style.display = "none";
 }
