@@ -1,0 +1,130 @@
+@media (min-width: 768px) {
+  .trans-1 {
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  .trans-1:hover {
+    box-shadow: 7px 7px #7d8c7b;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  .trans-2 {
+    transition: box-shadow 0.15s ease-in-out;
+  }
+
+  .trans-2:hover {
+    box-shadow: 7px 7px #172815;
+    transition: box-shadow 0.15s ease-in-out;
+  }
+}
+
+.trans-sm-1:hover {
+  box-shadow: 4px 4px #7d8c7b;
+}
+
+.trans-sm-2:hover {
+  box-shadow: 4px 4px #172815;
+}
+
+@media (min-width: 576px) {
+  .footer-class {
+    text-align: right;
+  }
+}
+
+@media (max-width: 992px) {
+  .cont-second {
+    padding-top: 4em;
+  }
+}
+
+.dark-shadow-cookies {
+  box-shadow: 7px 7px #172815;
+}
+
+.active {
+  font-family: montserrat;
+  font-weight: 600;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.algin-text-right {
+  text-align: right;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Roboto, "sans-serif";
+  padding-top: 100px;
+}
+
+.cal {
+  font-size: 1rem;
+}
+
+.c-1 {
+  background-color: #7d8c7b;
+}
+
+.c-2 {
+  background-color: #172815;
+}
+
+.f-montserrat {
+  font-family: Montserrat, "sans-serif";
+}
+
+.f-white {
+  color: white;
+}
+
+.info {
+  text-align: right;
+  text-decoration: none;
+  padding: 0.4em;
+}
+
+h2,
+h1 {
+  font-family: Montserrat, "sans-serif";
+  font-weight: 600;
+}
+
+.f-roboto {
+  font-family: Roboto, "sans-serif";
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.btn-main-1 {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: #172815;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #172815;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: #172815;
+  --bs-btn-active-border-color: none;
+  --bs-btn-font-family: Montserrat, "sans-serif";
+}
+
+.btn-main-2 {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: white;
+  --bs-btn-bg: #7d8c7d;
+  --bs-btn-border-color: none;
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #7d8c7d;
+  --bs-btn-hover-border-color: none;
+  --bs-btn-focus-shadow-rgb: none;
+  --bs-btn-active-color: white;
+  --bs-btn-active-bg: #7d8c7d;
+  --bs-btn-active-border-color: none;
+  --bs-btn-font-family: Montserrat, "sans-serif";
+}
