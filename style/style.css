@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+  --font-family: 'Montserrat', sans-serif;
+  --main-color1: #7d8c7b;
+  --main-color2: #172815;
+
+}
 @media (min-width: 768px) {
   .trans-1 {
     transition: box-shadow 0.15s ease-in-out;
   }
 
   .trans-1:hover {
-    box-shadow: 7px 7px #7d8c7b;
+    box-shadow: 7px 7px var(--main-color1);
     transition: box-shadow 0.15s ease-in-out;
   }
 
@@ -13,17 +20,17 @@
   }
 
   .trans-2:hover {
-    box-shadow: 7px 7px #172815;
+    box-shadow: 7px 7px var(--main-color2);
     transition: box-shadow 0.15s ease-in-out;
   }
 }
 
 .trans-sm-1:hover {
-  box-shadow: 4px 4px #7d8c7b;
+  box-shadow: 4px 4px var(--main-color1);
 }
 
 .trans-sm-2:hover {
-  box-shadow: 4px 4px #172815;
+  box-shadow: 4px 4px var(--main-color2); ;
 }
 
 @media (min-width: 576px) {
@@ -39,11 +46,11 @@
 }
 
 .dark-shadow-cookies {
-  box-shadow: 7px 7px #172815;
+  box-shadow: 7px 7px var(--main-color2);
 }
 
 .active {
-  font-family: montserrat;
+  font-family: var(--font-family);
   font-weight: 600;
 }
 
@@ -66,15 +73,15 @@ body {
 }
 
 .c-1 {
-  background-color: #7d8c7b;
+  background-color: var(--main-color1);
 }
 
 .c-2 {
-  background-color: #172815;
+  background-color: var(--main-color2);
 }
 
 .f-montserrat {
-  font-family: Montserrat, "sans-serif";
+  font-family: var(--font-family);
 }
 
 .f-white {
@@ -89,7 +96,7 @@ body {
 
 h2,
 h1 {
-  font-family: Montserrat, "sans-serif";
+  font-family: var(--font-family);
   font-weight: 600;
 }
 
@@ -102,29 +109,29 @@ h1 {
 .btn-main-1 {
   --bs-btn-font-weight: 600;
   --bs-btn-color: white;
-  --bs-btn-bg: #172815;
+  --bs-btn-bg: var(--main-color2);
   --bs-btn-border-color: none;
   --bs-btn-hover-color: white;
-  --bs-btn-hover-bg: #172815;
+  --bs-btn-hover-bg: var(--main-color2) ;
   --bs-btn-hover-border-color: none;
   --bs-btn-focus-shadow-rgb: none;
   --bs-btn-active-color: white;
-  --bs-btn-active-bg: #172815;
+  --bs-btn-active-bg: var(--main-color2) ;
   --bs-btn-active-border-color: none;
-  --bs-btn-font-family: Montserrat, "sans-serif";
+  --bs-btn-font-family: var(--font-family);
 }
 
 .btn-main-2 {
   --bs-btn-font-weight: 600;
   --bs-btn-color: white;
-  --bs-btn-bg: #7d8c7d;
+  --bs-btn-bg: var(--main-color1);
   --bs-btn-border-color: none;
   --bs-btn-hover-color: white;
-  --bs-btn-hover-bg: #7d8c7d;
+  --bs-btn-hover-bg: var(--main-color1);
   --bs-btn-hover-border-color: none;
   --bs-btn-focus-shadow-rgb: none;
   --bs-btn-active-color: white;
-  --bs-btn-active-bg: #7d8c7d;
+  --bs-btn-active-bg: var(--main-color1);
   --bs-btn-active-border-color: none;
-  --bs-btn-font-family: Montserrat, "sans-serif";
+  --bs-btn-font-family: var(--font-family);
 }
