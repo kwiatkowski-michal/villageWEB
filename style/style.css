@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 :root{
   --font-family: 'Raleway', sans-serif;
-  --main-color1: #7d8c7b;
-  --main-color2: #172815;
+  --main-color1: #BAAB68;
+  --main-color2: #6D213C;
 
 }
 @media (min-width: 768px) {
@@ -97,7 +97,7 @@ body {
 h2,
 h1 {
   font-family: var(--font-family);
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .f-roboto {
