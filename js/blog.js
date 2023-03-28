@@ -43,6 +43,5 @@ fetch("dokumenty.html")
     const moreDiv = document.createElement("div");
     moreDiv.className = "mt-2";
     moreDiv.appendChild(more);
-
     docs.appendChild(moreDiv);
   });
