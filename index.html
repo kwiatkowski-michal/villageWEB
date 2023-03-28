@@ -1,185 +1,240 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Przyłęki</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
 
-<head>
-  <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Przyłęki</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./style/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-</head>
-
-<body>
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary px-3 mb-3">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html"><img src="./img/logo.svg" alt="Logo" height="45" /></a>
-      <button style="border: none; background-color: transparent; font-size: 1.9rem" class="navbar-toggler bi-list"
-        type="button" data-bs-toggle="collapse" data-bs-target="#nav-main"></button>
-      <div class="collapse navbar-collapse" id="nav-main">
-        <ul class="navbar-nav me-auto mb-2">
-          <li class="nav-item">
-            <a class="nav-link active" href="./index.html#home">Strona główna</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./klub-seniora.html">Klub seniora</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./dokumenty.html">Dokumenty</a>
-          </li>
-        </ul>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary px-3 mb-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html"
+          ><img src="./img/logo.svg" alt="Logo" height="45"
+        /></a>
+        <button
+          style="border: none; background-color: transparent; font-size: 1.9rem"
+          class="navbar-toggler bi-list"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav-main"
+        ></button>
+        <div class="collapse navbar-collapse" id="nav-main">
+          <ul class="navbar-nav me-auto mb-2">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html#home"
+                >Strona główna</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./klub-seniora.html">Klub seniora</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dokumenty.html">Dokumenty</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!-- Welcome section/container -->
-  <div id="home" class="container col-xxl pb-5">
-    <div class="row flex-lg-row-reverse align-items-center px-2 px-sm-0">
-      <div class="col-lg-6">
-        <img src="./img/herb.svg" class="d-block mx-lg-auto img-fluid" width="200" height="500" loading="lazy" />
-      </div>
-      <div class="col-lg-6">
-        <h1 class="lh-1 mb-3">Witaj w Przyłękach!</h1>
-        <p id="opis" class="f-roboto">
-          Przyłęki to wieś położona w gminie Białe Błota w województwie kujawsko-pomorskim, w Polsce. Znajduje się ona około 18 km na północny zachód od Bydgoszczy. W Przyłękach mieszka około 400 osób, a dominującą formą działalności jest rolnictwo. We wsi znajduje się szkoła podstawowa oraz filia biblioteki publicznej.
-        </p>
-        <div class="d-grid gap-3 d-md-flex">
-          <a class="btn btn-main-1 trans-1 btn-lg px-5" href="https://facebook.com/" target="_blank"
-            title="Kliknij aby wejść na stronę na Facebooku">
-            <i class="bi bi-box-arrow-up-right"></i> Aktulaności</a>
-          <button type="button" class="btn btn-main-2 trans-2 btn-lg px-4">
-            Kontakt
-          </button>
+    </nav>
+    <!-- Welcome section/container -->
+    <div id="home" class="container col-xxl pb-5">
+      <div class="row flex-lg-row-reverse align-items-center px-2 px-sm-0">
+        <div class="col-lg-6">
+          <img
+            src="./img/herb.svg"
+            class="d-block mx-lg-auto img-fluid"
+            width="200"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="lh-1 mb-3">Witaj w Przyłękach!</h1>
+          <p id="opis" class="f-roboto">
+            Przyłęki to wieś położona w gminie Białe Błota w województwie
+            kujawsko-pomorskim, w Polsce. Znajduje się ona około 18 km na
+            północny zachód od Bydgoszczy. W Przyłękach mieszka około 400 osób,
+            a dominującą formą działalności jest rolnictwo. We wsi znajduje się
+            szkoła podstawowa oraz filia biblioteki publicznej.
+          </p>
+          <div class="d-grid gap-3 d-md-flex">
+            <a
+              class="btn btn-main-1 trans-1 btn-lg px-5"
+              href="https://facebook.com/"
+              target="_blank"
+              title="Kliknij aby wejść na stronę na Facebooku"
+            >
+              <i class="bi pe-2 bi-box-arrow-up-right"></i>Aktulaności</a
+            >
+            <button type="button" class="btn btn-main-2 trans-2 btn-lg px-4">
+              Kontakt
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Facts container -->
-  <div class="container f-white">
-    <div class="row row-cols-1 row-cols-lg-2 d-flex align-items-stretch row-gap-4 m-2 m-sm-0">
-      <div class="col pe-lg-4 d-flex align-items-stretch">
-        <div class="row">
-          <div class="p-5 c-1 trans-2 d-flex rounded-3">
-            <div class="row gap-4">
-              <div>
-                <h2><i class="bi bi-people"></i> Liczba mieszkańców</h2>
-                <div>1 608 osób</div>
-              </div>
-              <div>
-                <h2><i class="bi bi-textarea"></i> Powierzchnia</h2>
-                <div>0,00 km<sup>2</sup></div>
-              </div>
-              <div>
-                <h2><i class="bi bi-person-check"></i> Sołtys</h2>
+    <!-- Facts container -->
+    <div class="container f-white d-flex align-items-stretch">
+      <div
+        class="row row-cols-1 row-cols-lg-2 row-gap-4 m-2 m-sm-0"
+      >
+        <div class="col pe-lg-4 d-flex align-items-stretch">
+          <div class="row">
+            <div class="p-5 c-1 trans-2 d-flex">
+              <div class="row gap-4">
                 <div>
-                  Piotr Mikołajczak<br />
-                  <a class="f-white" href="mailto:przyleki@bialeblota.eu"><i class="bi bi-envelope"></i></a>
-                  <a class="f-white mx-3" href="tel:+48607320080"><i class="bi bi-telephone"></i></a>
+                  <h2><i class="bi pe-2 bi-people"></i>Liczba mieszkańców</h2>
+                  <div>1 608 osób</div>
+                </div>
+                <div>
+                  <h2><i class="bi pe-2 bi-textarea"></i>Powierzchnia</h2>
+                  <div>0,00 km<sup>2</sup></div>
+                </div>
+                <div>
+                  <h2><i class="bi pe-2 bi-person-check"></i>Sołtys</h2>
+                  <div class="gap-3">
+                    Piotr Mikołajczak<br />
+                    <a class="f-white" href="mailto:przyleki@bialeblota.eu"
+                      ><i class="bi bi-envelope"></i
+                    ></a>
+                    <a class="f-white mx-3" href="tel:+48607320080"
+                      ><i class="bi bi-telephone"></i
+                    ></a>
+                  </div>
+                </div>
+                <div>
+                  <h2><i class="bi pe-2 bi-bank"></i>Rada Sołecka</h2>
+                  <div>
+                    <div>
+                      Małgorzata Komórek
+                      <desc class="f-montserrat fw-semibold"
+                        >- przewodnicząca</desc
+                      >
+                    </div>
+                    <div>
+                      Jacek Turzyński
+                      <desc class="f-montserrat fw-semibold"
+                        >- zastępca przewodniczącego</desc
+                      >
+                    </div>
+                    <div>
+                      Piotr Brewczyński
+                      <desc class="f-montserrat fw-semibold">- sekretarz</desc>
+                    </div>
+                    <div>Małgorzata Zuska</div>
+                    <div>Zbigniew Rosin</div>
+                    <div>Piotr Prętki</div>
+                    <div>Wojciech Laskowski</div>
+                  </div>
+                </div>
+                <div>
+                  <h2>
+                    <i class="bi pe-2 bi-calendar2-check"></i>Najbliższe zebranie
+                  </h2>
+                  <section id="wynik" class="f-white">Wczytywanie...</section>
+                  <section id="calendar"></section>
                 </div>
               </div>
-              <div>
-                <h2><i class="bi bi-bank"></i> Rada Sołecka</h2>
-                <div>
-                  <div>
-                    Małgorzata Komórek
-                    <desc class="f-montserrat fw-semibold">- przewodnicząca</desc>
-                  </div>
-                  <div>
-                    Jacek Turzyński
-                    <desc class="f-montserrat fw-semibold">- zastępca przewodniczącego</desc>
-                  </div>
-                  <div>
-                    Piotr Brewczyński
-                    <desc class="f-montserrat fw-semibold">- sekretarz</desc>
-                  </div>
-                  <div>Małgorzata Zuska</div>
-                  <div>Zbigniew Rosin</div>
-                  <div>Piotr Prętki</div>
-                  <div>Wojciech Laskowski</div>
-                </div>
-              </div>
-              <div>
-                <h2>
-                  <i class="bi bi-calendar2-check"></i> Najbliższe zebranie
-                </h2>
-                <section id="wynik" class="f-white">Wczytywanie...</section>
-                <section id="calendar"></section>
+            </div>
+          </div>
+        </div>
+        <div class="col ps-lg-4 ">
+          <div class="row pb-3 ">
+            <div class="p-5 c-2 trans-1">
+              <h2><i class="bi pe-2 bi-trash"></i>Wywóz śmieci</h2>
+              <a href="https://cloud.fxsystems.com.pl/OdbiorySmieci/HarmonogramOnline.dll?gmina_id=309632&ulica=Przyłęki" id="trash" class="btn btn-main-2 btn-lg px-4"
+                ><i class="bi pe-2 bi-box-arrow-up-right"></i>Pokaż terminy</a
+              >
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="p-5 c-2 trans-1">
+              <div id="blog" class="row gap-3">
+                <h2><i class="bi pe-2 bi-file-earmark"></i>Ostatnie dokumenty</h2>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col ps-lg-4">
-        <div class="row pb-3">
-          <div class="p-5 c-2 trans-1 rounded-3">
-            <h2><i class="bi-trash"></i> Wywóz śmieci</h2>
-            <p class="m-1">Wybierz ulicę</p>
-            <select id="street" class="form-select f-roboto fs-6 mb-3">
-            </select>
-            <a id="trash" class="btn btn-main-2 btn-dark f-white btn-lg px-4"><i class="bi bi-box-arrow-up-right"></i>
-              Pokaż terminy</a>
-          </div>
-        </div>
-        <div class="row pt-2">
-          <div class="p-5 c-2 trans-1 rounded-3">
-            <div id="blog" class="row gap-3">
-              <h2><i class="bi-file-earmark"></i> Ostatnie dokumenty</h2>
-            </div>
-          </div>
-        </div>
+    </div>
+    <!-- Map embed -->
+    <div class="container">
+      <div class="col p-2 p-sm-0 pt-sm-4">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19190.74462920419!2d17.933734306085828!3d53.04115750315968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47036c90ce43c2bd%3A0x7e27f2f0f471af35!2zODYtMDA1IFByennFgsSZa2k!5e0!3m2!1spl!2spl!4v1680005019826!5m2!1spl!2spl"
+        width="100%"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
       </div>
     </div>
-  </div>
-  <!-- Map embed -->
-  <div class="container p-4 p-sm-3">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19190.74462920419!2d17.933734306085828!3d53.04115750315968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47036c90ce43c2bd%3A0x7e27f2f0f471af35!2zODYtMDA1IFByennFgsSZa2k!5e0!3m2!1spl!2spl!4v1680005019826!5m2!1spl!2spl" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  <!-- Footer -->
-  <div class="container border-top pt-4">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
-      <div class="col mb-3">
-        <a href="https://bip.bialeblota.pl" target="_blank"
-          class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-          <img class="bi me-2" src="./img/bip.svg" /><i class="bi bi-box-arrow-up-right"></i>
-        </a>
-        <p>&copy; Data aktualizacji: 28 marca 2023</p>
-      </div>
-      <div class="col mb-3 footer-class">
-        <h5></h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="./cookies.html" class="nav-link p-0 text-muted">Polityka prywatności</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </div>
-  <!-- Cookies div -->
-  <div id="section-to-hide"></div>
-  
-  <!-- Białe Błota mark -->
-  <div class="bg-dark-subtle">
-    <div class="container info bg-dark-subtle align-items-right text-muted">
-      <a class="text-muted">
-        <a>&nbsp;Oficjalna strona</a>
-        <a class="text-muted text-decoration-none fw-bold" target="_blank" href="https://bialeblota.pl">Gminy Białe
-          Błota
-          <i class="bi bi-box-arrow-up-right"></i>
-        </a>
-
-      </a>
+    <!-- Footer -->
+    <div class="container border-top pt-4">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+        <div class="col mb-3">
+          <a
+            href="https://bip.bialeblota.pl"
+            target="_blank"
+            class="d-flex align-items-center mb-3 link-dark text-decoration-none"
+          >
+            <img class="bi me-2" src="./img/bip.svg" /><i
+              class="bi bi-box-arrow-up-right"
+            ></i>
+          </a>
+          <p>&copy; Data aktualizacji: 28 marca 2023</p>
+        </div>
+        <div class="col mb-3 footer-class">
+          <h5></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="./cookies.html" class="nav-link p-0 text-muted"
+                >Polityka prywatności</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <script src="./js/cookies.js"></script>
-  <script src="./js/blog.js"></script>
-  <script src="./js/smieci.js"></script>
-  <script src="./js/zebranie.js"></script>
-  
-</body>
+    <!-- Cookies div -->
+    <div id="section-to-hide"></div>
 
+    <!-- Białe Błota mark -->
+    <div class="bg-dark-subtle">
+      <div class="container info bg-dark-subtle align-items-right text-muted">
+        <a class="text-muted">
+          <a>&nbsp;Oficjalna strona</a>
+          <a
+            class="text-muted text-decoration-none fw-bold"
+            target="_blank"
+            href="https://bialeblota.pl"
+            >Gminy Białe Błota
+            <i class="bi bi-box-arrow-up-right"></i>
+          </a>
+        </a>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/cookies.js"></script>
+    <script src="./js/blog.js"></script>
+    <script src="./js/zebranie.js"></script>
+  </body>
 </html>

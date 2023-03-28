@@ -6,7 +6,7 @@ if (!document.cookie.includes("cookieAccepted=true")) {
           <div class="toast-body">
             Korzystając z serwisu zgadzasz się na przetwarzanie danych osobowych zgodnie z <a style="color: black;" class="text-decoration-none f-montserrat fw-semibold" href="./cookies.html">polityką prywatności <i aria-hidden="true" class="bi bi-box-arrow-up-right"></i></a>
           </div>
-          <button type="button" class="btn-close me-3 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+          <button type="button" class="btn btn-close me-3 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ fetch("dokumenty.html")
     const smalls = Array.from(album.querySelectorAll("small")).map(
       (small) => small.innerHTML
     );
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
       const card = cards[i];
       const id = card.id;
       const small = smalls[i];
@@ -38,7 +38,7 @@ fetch("dokumenty.html")
     const more = document.createElement("a");
     more.href = "./dokumenty.html";
     more.className = "btn btn-main-2 btn-lg px-4";
-    more.innerHTML = '<i class="bi bi-box-arrow-up-right"></i> Zobacz więcej';
+    more.innerHTML = '<i class="bi pe-2 bi-box-arrow-up-right"></i>Zobacz więcej';
 
     const moreDiv = document.createElement("div");
     moreDiv.className = "mt-2";
