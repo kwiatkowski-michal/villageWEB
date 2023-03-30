@@ -118,24 +118,29 @@
           </div>
         </div>
       </div>
-      <div class="col ps-lg-4">
-        <div class="row pb-3">
-          <div class="p-5 c-2 trans-1 rounded-3">
-            <h2><i class="bi-trash"></i> Wywóz śmieci</h2>
-            <p class="m-1">Wybierz ulicę</p>
-            <select id="street" class="form-select f-roboto fs-6 mb-3">
-            </select>
-            <a id="trash" class="btn btn-main-2 btn-dark f-white btn-lg px-4"><i class="bi bi-box-arrow-up-right"></i>
-              Pokaż terminy</a>
-          </div>
+      <div class="col ps-lg-4 vstack gap-4">
+        <div class="row p-5 c-1 trans-2 rounded-3 gap-3">
+          <h2><i class="bi pe-2 bi-trash"></i>Wywóz śmieci</h2>
+          <select id="street" class="form-select f-roboto fs-6"></select>
+          <a id="trash" class="btn btn-main-1 f-white btn-lg"><i class="bi bi-box-arrow-up-right"></i>
+            Pokaż terminy</a>
         </div>
-        <div class="row pt-2">
-          <div class="p-5 c-2 trans-1 rounded-3">
-            <div id="blog" class="row gap-3">
-              <h2><i class="bi-file-earmark"></i> Ostatnie dokumenty</h2>
-            </div>
-          </div>
+        <div class="row c-2 p-5 trans-1 rounded-3 gap-3">
+          <h2><i class="bi pe-2 bi-bus-front"></i>Komunikacja miejska</h2>
+          <a href="https://zdmikp.bydgoszcz.pl/rozklady/paczka/linie.htm" class="btn btn-main-2 btn-lg">
+            <i class="bi pe-2 bi-box-arrow-up-right"></i>Rozkład jazdy</a>
+          <a href="https://zdmikp.bydgoszcz.pl/rozklady/paczka/linie.htm" class="btn btn-main-2 btn-lg">Informacje o
+            komunikacji autobusowej<br>w Kruszynie Krajeńskim</a>
         </div>
+        <div class="row c-1 p-5 trans-2 rounded-3 gap-3">
+          <h2><i class="bi pe-2 bi-wallet"></i>Planowane inwestycje</h2>
+          <a href="https://zdmikp.bydgoszcz.pl/rozklady/paczka/linie.htm" class="btn btn-main-1 btn-lg">Szczegółowe informacje</a>
+        </div>
+      </div>
+    </div>
+    <div class="col p-5 c-2 trans-1 mt-4 rounded-3">
+      <div id="blog" class="row gap-3">
+        <h2><i class="bi-file-earmark"></i> Ostatnie dokumenty</h2>
       </div>
     </div>
   </div>
@@ -143,9 +148,9 @@
   <div class="container">
     <div class="col p-2 p-sm-0 pt-sm-4">
       <iframe id="mapa"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9586.393888246363!2d17.85589274314744!3d53.08148592878858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47036d5333cd6c27%3A0x21ad62aa5fcf93e!2s86-005%20Kruszyn%20Kraje%C5%84ski!5e0!3m2!1spl!2spl!4v1679563695614!5m2!1spl!2spl"
-      width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9586.393888246363!2d17.85589274314744!3d53.08148592878858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47036d5333cd6c27%3A0x21ad62aa5fcf93e!2s86-005%20Kruszyn%20Kraje%C5%84ski!5e0!3m2!1spl!2spl!4v1679563695614!5m2!1spl!2spl"
+        width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
   <!-- Footer -->
@@ -170,7 +175,7 @@
   </div>
   <!-- Cookies div -->
   <div id="section-to-hide"></div>
-  
+
   <!-- Białe Błota mark -->
   <div class="bg-dark-subtle">
     <div class="container info bg-dark-subtle align-items-right text-muted">
@@ -191,7 +196,7 @@
   <script src="./js/blog.js"></script>
   <script src="./js/smieci.js"></script>
   <script src="./js/zebranie.js"></script>
-  
+
 </body>
 
 </html>

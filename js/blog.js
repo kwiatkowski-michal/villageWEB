@@ -38,7 +38,7 @@ fetch("dokumenty.html")
     const more = document.createElement("a");
     more.href = "./dokumenty.html";
     more.className = "btn btn-main-2 btn-lg px-4";
-    more.innerHTML = '<i class="bi bi-box-arrow-up-right"></i> Zobacz więcej';
+    more.innerHTML = 'Zobacz więcej';
 
     const moreDiv = document.createElement("div");
     moreDiv.className = "mt-2";
