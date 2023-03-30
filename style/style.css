@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 :root{
   --font-family: 'Raleway', sans-serif;
-  --main-color1: #9B9782;
-  --main-color2: #786873;
+  --main-color1: #546A7B;
+  --main-color2: #0D1F2D;
 
 }
 @media (min-width: 768px) {
