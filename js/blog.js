@@ -19,7 +19,7 @@ fetch("dokumenty.html")
         .join("");
       const container = document.createElement("div");
       container.innerHTML = `
-      <div>
+      <div class="">
         ${id}
         <small class="text-white-50">
           ${small}
