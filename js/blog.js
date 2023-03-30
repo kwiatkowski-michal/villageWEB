@@ -9,7 +9,7 @@ fetch("dokumenty.html")
     const smalls = Array.from(album.querySelectorAll("small")).map(
       (small) => small.innerHTML
     );
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 3; i++) {
       const card = cards[i];
       const id = card.id;
       const small = smalls[i];
