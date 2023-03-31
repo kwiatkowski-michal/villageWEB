@@ -15,7 +15,7 @@ fetch("data/zebrania.txt")
     const calendarIcon = document.createElement("i");
     calendarIcon.classList = "bi-box-arrow-up-right";
     const calendarBold = document.createElement("a");
-    calendarBold.classList = "text-decoration-none f-white f-montserrat fw-semibold";
+    calendarBold.classList = "text-decoration-none f-white f-main fw-bold";
     calendarBold.innerText = " Kalendarza Google ";
     calendarBold.href = googleCalendarLink;
     calendarBold.target = "_blank";

@@ -51,7 +51,7 @@
 
 .active {
   font-family: var(--font-family);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .justify-text {
@@ -80,7 +80,7 @@ body {
   background-color: var(--main-color2);
 }
 
-.f-montserrat {
+.f-main {
   font-family: var(--font-family);
 }
 
@@ -107,7 +107,7 @@ h1 {
 }
 
 .btn-main-1 {
-  --bs-btn-font-weight: 600;
+  --bs-btn-font-weight: 700;
   --bs-btn-color: white;
   --bs-btn-bg: var(--main-color2);
   --bs-btn-border-color: none;
@@ -122,7 +122,7 @@ h1 {
 }
 
 .btn-main-2 {
-  --bs-btn-font-weight: 600;
+  --bs-btn-font-weight: 700;
   --bs-btn-color: white;
   --bs-btn-bg: var(--main-color1);
   --bs-btn-border-color: none;

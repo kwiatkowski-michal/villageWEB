@@ -9,7 +9,7 @@ fetch("dokumenty.html")
     const smalls = Array.from(album.querySelectorAll("small")).map(
       (small) => small.innerHTML
     );
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
       const card = cards[i];
       const id = card.id;
       const small = smalls[i];
@@ -33,7 +33,7 @@ fetch("dokumenty.html")
     const btnsToUpdate = docs.querySelectorAll(".btn");
     btnsToUpdate.forEach((btn) => {
       btn.className =
-        "btn btn-sm mt-2 me-2 btn-outline-light f-montserrat fw-semibold";
+        "btn btn-sm mt-2 me-2 btn-outline-light f-main fw-bold";
     });
     const more = document.createElement("a");
     more.href = "./dokumenty.html";
